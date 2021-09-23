@@ -12,7 +12,7 @@
 					<div class="caption text-center text-white" data-stellar-ratio="0.7">
                 
                     <div class="logo">
-                    <img src="/img/img9.jpg" alt="" width="200" height="150">
+                    <img src="/img/logo.png" alt="" width="200" height="150">
 
                     </div>
                     
@@ -41,7 +41,7 @@
             </div>
 
             <div class="image">
-              <img src="/img/img11.png" alt="" width="100" height="100">
+              <img src="/img/img001.png" alt="" width="100" height="100">
             </div>
 
             <div class="text-right">
