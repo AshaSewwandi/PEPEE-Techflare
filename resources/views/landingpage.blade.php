@@ -12,7 +12,7 @@
 					<div class="caption text-center text-white" data-stellar-ratio="0.7">
                 
                     <div class="logo">
-                    <img src="/img/logo.png" alt="" width="200" height="150">
+                    <img src="/img/logo.png" alt="" width="120" height="60">
 
                     </div>
                     
