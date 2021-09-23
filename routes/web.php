@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::get('/addpost',[App\Http\Controllers\PostController::class,'addpost']);
 Route::get('/viewpost',[App\Http\Controllers\PostController::class,'viewpost']);
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
