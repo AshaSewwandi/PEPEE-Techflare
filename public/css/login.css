@@ -1,0 +1,93 @@
+body{
+    background-image: url('/img/image1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    }
+  
+  .logo{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  .nav.justify-content-end li a{
+    color: #F737B0;  
+    font-family:Segeo UI; 
+    font-size: 30px;
+  }
+  .item1 h1{
+    font-family: HGSGyoshotai;
+    color: #BF11DD;
+  }
+  .item2 h1{
+    font-family: HGSGyoshotai;
+    color: #F737B0;
+  }
+  .item1 h1{
+    position: absolute;
+    left: 100px;
+    top: 250px;
+    font-size: 100px;
+  }
+  .item2 h1{
+    position: absolute;
+    left: 100px;
+    top: 350px;
+    font-size: 100px;
+  }
+  .text-right{
+    position: absolute;
+    left: 120px;
+    top: 470px;
+    font-size: 70px;
+    font-family:Segeo UI;
+  }
+  .btn.btn-primary-1{
+    background-color: #BF11DD;
+    border-radius: 25px;
+    color:#ffffff;
+    border: none;
+    position: relative;
+    left: 20px;
+    font-size: 30px;
+  }
+  .btn.btn-primary-2{
+    background-color: #ffffff;
+    border-radius: 25px;
+    color:#BF11DD;
+    position: relative;
+    left: 70px;
+    font-size: 30px;
+  }
+  .image{
+    position: absolute;
+    left: 360px;
+    top: 260px;
+  }
+  a:link {
+    text-decoration: none;     
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline; 
+  }
+  a:active {
+    text-decoration: underline;
+    color:#BF11DD;
+  }
+  .btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .btn-primary-2 {
+    border-color: #BF11DD;
+  }
+  

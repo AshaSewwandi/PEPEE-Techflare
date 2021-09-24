@@ -13,4 +13,5 @@ class PostController extends Controller
     public function viewpost(){
         return view('viewpost');  
     }
+    
 }
