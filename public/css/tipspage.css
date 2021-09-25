@@ -1,57 +1,57 @@
 body{
-    background-image: url('/img/back11.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 100% 100%;
-    }
+  background-image: url('/img/back11.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+  }
+
+.logo{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.imagecat{
+  position: absolute;
+  top: 220px;
+  right: 35px;
+}
+
+.dogfoot{
+  position: absolute;
+  top: 200px;
+  right: 1268px;
+}
+
+.nav.justify-content-end li a{
+  color: #F737B0;  
+  font-family:Segeo UI; 
+  font-size: 30px;
+}
+
+
+.para{
+  position: absolute;
+  text-align: left;
+  left: 100px;
+  top: 250px;
+  font-size: 20px;
+  color: #F737B0;
+
+}
+
+.semipara h2{
+  font-size: 50px;
+  color: #F737B0;
+}
+
+.semipara2{
+  position: absolute;
+  right: 1038px;
+  top: 200px;
+  color: #F737B0;
+
   
-  .logo{
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
 
-  .imagecat{
-    position: absolute;
-    top: 220px;
-    right: 35px;
-  }
-
-  .dogfoot{
-    position: absolute;
-    top: 200px;
-    right: 1268px;
-  }
-
-  .nav.justify-content-end li a{
-    color: #F737B0;  
-    font-family:Segeo UI; 
-    font-size: 30px;
-  }
-
-
-  .para{
-    position: absolute;
-    text-align: left;
-    left: 100px;
-    top: 250px;
-    font-size: 20px;
-    color: #F737B0;
-  
-  }
-
-  .semipara h2{
-    font-size: 50px;
-    color: #F737B0;
-  }
-  
-  .semipara2{
-    position: absolute;
-    right: 1038px;
-    top: 200px;
-    color: #F737B0;
-
-    
-  
-  }
+}
