@@ -13,5 +13,9 @@ class PostController extends Controller
     public function viewpost(){
         return view('viewpost');  
     }
+
+    public function index(){
+        
+    }
     
 }

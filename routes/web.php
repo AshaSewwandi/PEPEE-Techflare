@@ -22,10 +22,6 @@ Route::get('/login', function () {
     return view('loginform');
 });
 
-Route::get('/registration', function () {
-    return view('registration');
-});
-
 Route::get('/tipspage', function () {
     return view('tipspage');
 });
