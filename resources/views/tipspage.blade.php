@@ -32,10 +32,6 @@
                       </li> 
                     </ul>
                     <div class="I1" h2 text-align: left>
-
-}>
-               
-
                 <div class ="semipara" >  
                    <h2>Tips to take care of your pet</h2>     
                 </div>
