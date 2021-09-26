@@ -3,6 +3,9 @@
     <head>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <link href="/css/style.css" rel="stylesheet">   
     </head>
     <body>
@@ -49,7 +52,7 @@
             <h1><u>About Us</u><img src="/img/img003.png" alt="" width="100" height="100"> </h1>
           </div>
           <div class="item4">
-            <p></p>
+            <div id="Frame-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
           <div class="image">
             <img src="/img/img001.png" alt="" width="100" height="100">
           </div>
@@ -95,11 +98,25 @@
                 </form>
               </div>
               <div class="vl"></div>
+              <div id="Frame-2"><b>Message</b>
+                <br>
+                <p>Leave your message</p>
+                <br><br><br><br>
+                <a href="" class="btn btn-primary-3">Send Message</a>
+              </div>
+              <div class="text-right">
+          </div>
             </div>
           </div>
         </div>
         <div class="section2-image3">
       </div>
     </section>       
+  
+
+   
+ 
+
+
   </body>
 </html>
