@@ -120,9 +120,9 @@ body{
 }
 .vl {
   border-left: 6px solid #BF11DD;
-  height: 500px;
+  height: 490px;
   position: absolute;
-  left: 50%;
+  left:55%;
   margin-left: 5px;
   top: 2700;
 }
