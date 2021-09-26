@@ -36,15 +36,14 @@
                    <h2>Tips to take care of your pet</h2>     
                 </div>
                 <div class= "semipara2">
-                <h3>Vaterinarian Visits</h3>
+                <h3>Veterinarian Visits</h3>
                 </div>
                 <div class ="dogfoot">
                 <img src="/img/dogfoot.jpeg" alt="" width="30" height="30">  
                 </div>
-                <div class ="para" >
-                                
-                    <p>Loream ipsum dolor sit amet, adhuc delenit id eam, id utroque suaviate<br> molestiae pri. Ei amet mollis consequuntur cum, natum graecis cum ut.<br>falli conceptam sed et, vim id inani conclusionemque, sed de dicat<br> voluptaria. Enum eu soluta doctus. In novum aliquando est, audire<br> bonorum indoctum eu est.<br></p>
-                    <p>Nisl malorum voluptua duo ei, ex pri ipsum impetus legimus. Cum an zrill<br> nostro aeterno, nam persius tractatcs et. Vix mandamus reformidans<br> vituperatoribus ut, sea agam iusto animal ne. Omnium corrumpit vix ne,<br> et sea deleniti verterem sapientem. Vitae vidisse tritani cum at, eum.
+                <div class ="para" >             
+                    <p>Responsible pet ownership starts with regular visits to the veterinarian. <br> Given their shorter-than-human lifespan, your dog or cat should be getting a checkup at least once or twice a year.<br></p>
+                    <p>Depending on your pet's vaccination schedule, they may go more frequently when they're young,<br> but establishing and maintaining good pet health means keeping up with vet visits as they age.</p>
                     </p>
                 </div>
             </div>
