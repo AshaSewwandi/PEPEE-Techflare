@@ -114,7 +114,7 @@ html{
     border-left: 6px solid #BF11DD;
     height: 500px;
     position: absolute;
-    left: 50%;
+    left: 820px;
     margin-left: 5px;
     top: 2700;
   }
@@ -161,7 +161,7 @@ html{
     border-radius: 25px;
     color:#ffffff;
     position: relative;
-    left: 50px;
+    right: 10px;
     font-size: 20px;
     width: 40%;
   }
@@ -225,7 +225,7 @@ html{
     position:absolute; 
     font-family: HGSGyoshotai;
     top:1150px; 
-    right:100px;
+    right:60px;
     width:800px; 
     height:400px; 
     background-color:none;
@@ -237,7 +237,7 @@ html{
     position:absolute; 
     font-family: HGSGyoshotai;
     top:2800px; 
-    right:10px;
+    left:875px;
     width:800px; 
     height:400px; 
     background-color:none;
