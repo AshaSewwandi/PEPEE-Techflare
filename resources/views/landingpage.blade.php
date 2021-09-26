@@ -32,14 +32,14 @@
 
             <div class="item2">
                 <h1>Don't Shop</h1>
-            </div>
+            </div>  
 
             <div class="image">
               <img src="/img/img001.png" alt="" width="100" height="100">
             </div>
 
             <div class="text-right">
-              <a  href="/addpost" class="btn btn-primary-1"> Adopt </a>
+              <a  href="/" class="btn btn-primary-1"> Adopt </a>
               <a  href="/login" class="btn btn-primary-2"> Find Shelter</a>
             </div>
     <section id="section1" class="parallax" data-stellar-background-ratio="0.5">
@@ -73,7 +73,7 @@
           </div>
           <div class="text-right">
             <a href="/home" class="btn btn-primary-1">Adopt</a>
-            <a  href="/addpost" class="btn btn-primary-2"> Find Shelter</a>
+            <a  href="/login" class="btn btn-primary-2"> Find Shelter</a>
           </div>
         </div>
       </div>
