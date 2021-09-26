@@ -1,5 +1,4 @@
 body{
-  background-image: url('/img/back11.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -51,7 +50,32 @@ body{
   right: 1038px;
   top: 200px;
   color: #F737B0;
-
-  
-
+}
+#section1 {
+  height: 840px;
+  background-image: url('/img/img5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section2 {
+  height: 840px;
+  background-image: url('/img/img5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section3 {
+  height: 840px;
+  background-image: url('/img/img5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section4 {
+  height: 840px;
+  background-image: url('/img/img5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
