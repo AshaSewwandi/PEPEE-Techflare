@@ -46,7 +46,7 @@
 
             <div class="text-right">
               <a  href="/addpost" class="btn btn-primary-1"> Adopt </a>
-              <a  href="/viewpost" class="btn btn-primary-2"> Find Shelter</a>
+              <a  href="/login" class="btn btn-primary-2"> Find Shelter</a>
             </div>
         </div>
       </section>     

@@ -54,9 +54,9 @@
                                 @csrf
 
                                 <div class="form-group">
-                                    <label for="email" class="col-md-4 col-form-label" style="font-size: 20px; color:#F737B0"><b>{{ __('Username') }}</b></label>
+                                    <label for="email" class="col-md-4 col-form-label" style="font-size: 20px; color:#F737B0"><b>{{ __('Email') }}</b></label>
 
-                                    <div class="col-md-12">
+                                    <div class="col-md-8">
                                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus style="background-color: #F8C3E4; border-radius: 40px">
 
                                         @error('email')
@@ -70,7 +70,7 @@
                                 <div class="form-group">
                                     <label for="password" class="col-md-4 col-form-label" style="margin-top: 15px; font-size: 20px; color:#F737B0"><b>{{ __('Password') }}</b></label>
 
-                                    <div class="col-md-12">
+                                    <div class="col-md-8">
                                         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" style="background-color: #F8C3E4; border-radius: 40px">
 
                                         @error('password')
@@ -87,27 +87,27 @@
                                             <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                             <label class="form-check-label" for="remember">
-                                                {{ __('Remember Me') }}
+                                               <b>{{ __('Remember Me') }}</b> 
                                             </label>
                                         </div>
                                     </div>
                                     @if (Route::has('password.request'))
-                                            <a class="btn btn-link" href="{{ route('password.request') }}" style="margin-left:33px">
-                                                {{ __('Forgot Your Password?') }}
+                                            <a href="{{ route('password.request') }}" style="margin-left: -80px; margin-top: 6px; color:#F737B0 ">
+                                               <b>{{ __('Forgot Your Password?') }}</b> 
                                             </a>
                                         @endif
                                 </div>
                                 <br>
                                 <div class="form-group row mb-0">
-                                    <div class="col-md-12" style="margin-left: 15px">
-                                        <button type="submit" class="btn btn-primary" style="padding-left: 200px; padding-right: 200px; background-color: #FF9985 !important; border-style: none !important; color:white !important; border-radius: 10px">
+                                    <div class="col-md-8" style="margin-left: 15px">
+                                        <button type="submit" class="btn btn-primary" style="padding-left: 190px; padding-right: 190px; background-color: #F737B0 !important; border-style: none !important; color:white !important; border-radius: 40px">
                                            <b>{{ __('Log In') }}</b> 
                                         </button>
                                     </div>
                                 </div>
 
-                                <div class="form-group row justify-content-center" style="color: #B6B6B6; margin-top: 10px">
-                                    Don't have an account? <a href="/register" style="margin-left: 2px">Create Account</a> 
+                                <div class="form-group row justify-content-center" style="color: #F192CD; margin-top: 10px; margin-right: 220px">
+                                   <b>Don't have an account?</b>  <a href="/register" style="margin-left: 5px; color: #F737B0"> <b>Create Account</b> </a> 
                                 </div>
                             </form>
                         </div>
