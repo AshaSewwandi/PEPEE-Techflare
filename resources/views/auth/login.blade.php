@@ -26,11 +26,18 @@
 
 
         <style>
+            .page-holder {
+                min-height: 100vh;
+            }
+            .bg-cover {
+            background-size: cover !important;
+            }
             .login {
                 background-image: url('{{asset("/img/Login.jpg")}}');
-                background-size: 100% 100%;
                 font-family: 'Segoe UI', sans-serif;
+                background-size: cover;
                 background-attachment: fixed;
+                height: 100%; 
                 background-position: center;
                 background-repeat: no-repeat;
             }
@@ -53,7 +60,7 @@
                                 @csrf
 
                                 <div class="form-group">
-                                    <label for="email" class="col-md-4 col-form-label" style="font-size: 20px; color:#F737B0"><b>{{ __('Email') }}</b></label>
+                                    <label for="email" class="col-md-4 col-form-label" style="color:#F737B0"><b>{{ __('Email') }}</b></label>
 
                                     <div class="col-md-8">
                                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus style="background-color: #F8C3E4; border-radius: 40px">
@@ -67,7 +74,7 @@
                                 </div>
                                 
                                 <div class="form-group">
-                                    <label for="password" class="col-md-4 col-form-label" style="margin-top: 15px; font-size: 20px; color:#F737B0"><b>{{ __('Password') }}</b></label>
+                                    <label for="password" class="col-md-4 col-form-label" style="margin-top: 15px; color:#F737B0"><b>{{ __('Password') }}</b></label>
 
                                     <div class="col-md-8">
                                         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" style="background-color: #F8C3E4; border-radius: 40px">
