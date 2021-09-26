@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,15 @@ use App\Http\Controllers\PostController;
 Route::get('/', function () {
     return view('landingpage');
 });
+
+Route::get('/login', function () {
+    return view('loginform');
+});
+
+Route::get('/tipspage', function () {
+    return view('tipspage');
+});
+
 
 Route::get('/addpost',[App\Http\Controllers\PostController::class,'addpost']);
 Route::get('/viewpost',[App\Http\Controllers\PostController::class,'viewpost']);

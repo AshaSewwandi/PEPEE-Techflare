@@ -20,13 +20,12 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="/css/style.css" rel="stylesheet">
+        <link href="/css/login.css" rel="stylesheet">
 
         <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
 
 
         <style>
-            
             .login {
                 background-image: url('{{asset("/img/Login.jpg")}}');
                 background-size: 100% 100%;
