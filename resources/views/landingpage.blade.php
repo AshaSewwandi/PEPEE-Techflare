@@ -7,6 +7,41 @@
     </head>
     <body>
 
+
+                    </div>
+                    
+                    <ul class="nav justify-content-end">
+                  
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li> 
+                    </ul>
+
+            <div class="item1">
+				        <h1 >Adopt</h1>
+            </div>
+
+            <div class="item2">
+                <h1>Don't Shop</h1>
+            </div>
+
+            <div class="image">
+              <img src="/img/img001.png" alt="" width="100" height="100">
+            </div>
+
+            <div class="text-right">
+              <a  href="/addpost" class="btn btn-primary-1"> Adopt </a>
+              <a  href="/login" class="btn btn-primary-2"> Find Shelter</a>
+            </div>
     <section id="section1" class="parallax" data-stellar-background-ratio="0.5">
       <div class="container">
 				<div class="caption text-center text-white" data-stellar-ratio="0.7">    
@@ -37,8 +72,8 @@
             <img src="/img/img001.png" alt="" width="100" height="100">
           </div>
           <div class="text-right">
-            <a href="/addpost" class="btn btn-primary-1">Adopt</a>
-            <a  href="/viewpost" class="btn btn-primary-2"> Find Shelter</a>
+            <a href="/home" class="btn btn-primary-1">Adopt</a>
+            <a  href="/addpost" class="btn btn-primary-2"> Find Shelter</a>
           </div>
         </div>
       </div>
@@ -96,53 +131,6 @@
                 </form>
               </div>
               <div class="vl"></div>
-=======
-    <section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5">
-        <div class="container">
-					<div class="caption text-center text-white" data-stellar-ratio="0.7">
-                
-                    <div class="logo">
-                    <img src="/img/logo.png" alt="" width="120" height="60">
-
-                    </div>
-                    
-                    <ul class="nav justify-content-end">
-                  
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                      </li> 
-                    </ul>
-
-            <div class="item1">
-				        <h1 >Adopt</h1>
-            </div>
-
-            <div class="item2">
-                <h1>Don't Shop</h1>
-            </div>
-
-            <div class="image">
-              <img src="/img/img001.png" alt="" width="100" height="100">
-            </div>
-
-            <div class="text-right">
-              <a  href="/addpost" class="btn btn-primary-1"> Adopt </a>
-              <a  href="/viewpost" class="btn btn-primary-2"> Find Shelter</a>
-
-            </div>
-          </div>
-        </div>
-        <div class="section2-image3">
-      </div>
-    </section>       
+      </section>    
   </body>
 </html>
