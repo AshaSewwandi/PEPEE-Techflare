@@ -103,6 +103,21 @@
                                         @enderror
                                     </div>
                                 </div>
+
+                                <div class="form-group">
+                                    <label for="mobileNo" class="col-md-4 col-form-label" style="color: #BF11DD"> <b>{{ __('MobileNo') }}</b> </label>
+
+                                    <div class="col-md-12">
+                                        <input id="mobileNo" type="text" class="form-control @error('MobileNo') is-invalid @enderror" name="mobileNo" required autocomplete="mobileNo" autofocus style="background-color: #EFD6F3; border-radius: 40px">
+
+                                        @error('mobileNo')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+
                                 <div class="form-group row">
                                     <div class="form-group col-md-6">
                                         <label for="password" class="col-md-6 col-form-label" style="color: #BF11DD"><b>{{ __('Password') }}</b></label>
