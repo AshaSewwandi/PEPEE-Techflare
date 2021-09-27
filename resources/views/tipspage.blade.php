@@ -34,18 +34,18 @@
                    <h2>Tips to take care of your pet</h2>     
                 </div>
                 <div class= "semipara2">
-                <h3>Vaterinarian Visits</h3>
+                <h3>Veterinarian Visits</h3>
                 </div>
                 <div class ="dogfoot">
                 <img src="/img/dogfoot.jpeg" alt="" width="30" height="30">  
-          </div>
-          <div class ="para" >
+
+                </div>
+               <div class ="para" >
                                 
                     <p>Responsible pet ownership starts with regular visits to the veterinarian. <br> Given their shorter-than-human lifespan, your dog or cat should be getting <br>a checkup at least once or twice a year.Depending on your pet's vaccination <br>schedule,they may go more frequently when they're young, but establishing <br>and maintaining good pet health means keeping up with vet visits as they age.<br></p>
                     
-          </div>
-
-          <div class= "semipara3">
+                </div>                    
+                <div class= "semipara3">
                 <h3>Vaccinations</h3>
                 </div>
                 <div class ="dogfoot2">
