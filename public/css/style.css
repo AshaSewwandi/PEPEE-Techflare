@@ -6,6 +6,7 @@ html{
     background-attachment: fixed;
     background-position: center;
     background-size: 100% 100%;
+    overflow-x: hidden;
     }
   .logo{
     position: absolute;
