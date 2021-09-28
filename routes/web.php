@@ -19,18 +19,12 @@ Route::get('/', function () {
     return view('landingpage');
 });
 
-Route::get('/login', function () {
-    return view('loginform');
-});
-
 Route::get('/tipspage', function () {
     return view('tipspage');
 });
 
-
 Route::get('/addpost',[App\Http\Controllers\PostController::class,'addpost']);
 Route::get('/viewpost',[App\Http\Controllers\PostController::class,'viewpost']);
-
 
 Auth::routes();
 
