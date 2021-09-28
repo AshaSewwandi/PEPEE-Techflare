@@ -13,8 +13,26 @@ body{
 
 .imagecat{
   position: absolute;
-  top: 220px;
+  top: 200px;
   right: 35px;
+}
+
+.imagecat2{
+  position: absolute;
+  top: 900px;
+  left: 35px;
+}
+
+.imagecat3{
+  position: absolute;
+  top: 1750px;
+  right: 35px;
+}
+
+.imagecat4{
+  position: absolute;
+  top: 2550px;
+  left: 35px;
 }
 
 .dogfoot{
@@ -102,7 +120,7 @@ body{
 
 .semipara4{
   position: absolute;
-  right: 1120px;
+  right: 1080px;
   top: 1750px;
   color: #F737B0;
 }
