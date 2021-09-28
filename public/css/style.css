@@ -196,28 +196,28 @@ html{
   }
   #section1 {
     height: 840px;
-    background-image: url('/img/img2.jpg');
+    background-image: url('/img/img2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   #section2 {
     height: 840px;
-    background-image: url('/img/img002.jpg');
+    background-image: url('/img/img002.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   #section3 {
     height: 840px;
-    background-image: url('/img/img004.jpg');
+    background-image: url('/img/img004.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   #section4 {
     height: 840px;
-    background-image: url('/img/img005.jpg');
+    background-image: url('/img/img005.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
