@@ -19,7 +19,7 @@ class CreateMessagesTable extends Migration
             $table->string('email')->unique();
             $table->integer('contact_number');
             $table->string('message');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users'); 
             $table->timestamps();
             $table->softDeletes();
