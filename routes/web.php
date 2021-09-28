@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MessageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +36,11 @@ Route::get('/viewpost',[App\Http\Controllers\PostController::class,'viewpost']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+Route::get('/AddMessage', [App\Http\Controllers\MessageController::class,'AddMessage']);
+
+Route::get('/StoreMessage', [App\Http\Controllers\MessageController::class,'StoreMessage']);
+
+

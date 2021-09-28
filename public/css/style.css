@@ -37,10 +37,8 @@ html{
     font-family: HGSGyoshotai;
     color:  #F737B0;
     font-size: 70px;
-  }
-  .item3 h1{
     position: absolute;
-    right: 400px;
+    right: 500px;
     top: 1000px;
     text-decoration: underline;
     text-underline-offset: 10px;
@@ -70,20 +68,23 @@ html{
     color:  #F737B0;
     font-size: 30px;
     position: absolute;
-    left: 150px;
+    left: 100px;
     top: 1950px;
     text-align: justify;
     line-height: 80px;
   }
-  .item6 ul li::before {
-    content: "\2022";
-    color:  #BF11DD;
-    font-weight: bold;
-    display: inline-block; 
-    width: 2em;
-    margin-left: -1em;
-    font-size: 1.2em;
+  .item6 ul li i {
+    margin-right: 10px;
+    color:#BF11DD;
+    display: inline-block;
+    margin-right: 4px;
   }
+  .item6 ul li i :visited {
+      color: #F737B0;
+    }
+  .item6 ul li i :hover {
+      color: #8D3B7C;
+    }
   .item7{
     font-family: HGSGyoshotai;
     color:  #F737B0;
@@ -110,6 +111,12 @@ html{
     width: 400px;
     height: 50px;   
   }
+  .form-control2{
+    border-radius: 25px;
+    padding: 20px; 
+    width: 400px;
+    height: 100px;   
+  }
   .vl {
     border-left: 6px solid #BF11DD;
     height: 500px;
@@ -131,7 +138,6 @@ html{
     max-width: 100%;
     padding: 50px 0;
   }
-  
   .text-right{
     position: absolute;
     left: 120px;
@@ -161,7 +167,7 @@ html{
     border-radius: 25px;
     color:#ffffff;
     position: relative;
-    right: 10px;
+    left: 50px;
     font-size: 20px;
     width: 40%;
   }
@@ -172,8 +178,14 @@ html{
   }
   a:link {
     text-decoration: none;     
+    color: #F737B0;
+    background-color: transparent;
+    text-decoration: none;
   }
   a:visited {
+    text-decoration: none;
+    color: #F737B0;
+    background-color: transparent;
     text-decoration: none;
   }
   a:active {
@@ -230,7 +242,7 @@ html{
     height:400px; 
     background-color:none;
     color: #F737B0;
-    font-size: 20px;
+    font-size: 25px;
     text-align: justify;
   }
   #Frame-2{
@@ -248,5 +260,20 @@ html{
   #Frame-2 p{
     font-size: 20px;
   }  
-
-
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .alert-light{
+    padding: 20px;
+    background-color: #E9CEEE;
+    color: #F737B0;
+  }
