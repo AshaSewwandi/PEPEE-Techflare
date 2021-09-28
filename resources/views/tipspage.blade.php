@@ -58,15 +58,15 @@
                   </div>
 
           <div class= "semipara4">
-                <h3>Neutering</h3>
+                <h3>Healthy Food</h3>
                 </div>
                 <div class ="dogfoot3">
                 <img src="/img/dogfoot.jpeg" alt="" width="30" height="30">  
           </div>
           <div class ="para2" >
                                 
-          <p>Sterilizing your pet prevents a host of health problems, including complicated <br>pregnancies, and reduces the number of homeless animals. Spaying your kitty <br>(removing the uterus and ovaries) greatly reduces her risk for cervical cancer,<br> eliminates the risk of ovarian cancer, and prevents her from going <br>into "heat." That minimizes the chance that she'll stray from home in search of a partner,<br> and any nearby male cats will be less aggressive (and they won't spray to mark their territory,<br> something that benefits you and your furniture). <br></p>
-          <p>Neutering your puppy helps alleviate aggression and roaming the neighborhood,<br> and will prevent him from getting testicular cancer. Because spaying or <br>neutering is surgery that requires general anesthesia, your pet will likely stay <br>overnight at the vet's office for at least one night for observation and recuperation.<br></p>
+          <p>Two connected elements of responsible pet ownership include providing animals<br>with fresh, cool water and healthy food at all times. The right pet food will<br> enrich your best buddy's life, providing them with the energy and nutrients they <br>need. With so many meal options to choose from, it can be daunting, <br>but you can become adept in no time by familiarizing yourself with important <br>ingredients and how they help your pup or kitty.<br>
+          <p>When choosing the best cat food, look for a good balance of protein, carbs and <br>fats. These are important ingredients for dog food, too, as is plenty of fiber for<br> the digestive system. In addition to healthy ingredients, select a pet food <br>formula that is appropriate for your pet's age, health conditions and activity level, <br>and speak to your vet before switching your pet to a specialized food.
           </div>
         
           <div class ="imagecat" >
@@ -84,13 +84,26 @@
           </div>
           <div class ="para3" >
                                 
-          <p>It's no secret that dogs and cats love to play, and it's an effective relationship-building<br> activity. Take stock of their toys. Are they safe? Be mindful of threadbare stuffed toys that<br> pose choking hazards and hard, sharp edges that could cause injury. Throw away and<br> replace playthings that are worn out. Making DIY cat toys and dog toys is a great, <br>inexpensive way to bring even more fun to pet parenting!nRemember, these tips aren't <br> applicablejust during pet holidays — make them part of your regular pet parenting role, and you and your pets will reap the benefits for a lifetime!</p>
+          <p>It's no secret that dogs and cats love to play, and it's an effective <br>relationship-building activity. Take stock of their toys. Are they safe?<br> Be mindful of threadbare stuffed toys that pose choking hazards and hard, <br>sharp edges that could cause injury. Throw away and replace playthings <br>that are worn out. Making DIY cat toys and dog toys is a great, inexpensive way to <br>bring even more fun to pet parenting!nRemember, these tips aren't  applicablejust<br> during pet holidays — make them part of your regular pet parenting role, and <br>you and your pets will reap the benefits for a lifetime!</p>
           </div>
         
           <div class ="imagecat" >
-           <img src="/img/cat1.jpeg" alt="" width="400" height="360">  
-                 
-        </div> 
+           <img src="/img/cat1.png" alt="" width="500" height="400">         
+          </div> 
+
+          <div class ="imagecat2" >
+           <img src="/img/vaccine.png" alt="" width="500" height="400">         
+          </div> 
+
+          <div class ="imagecat3" >
+           <img src="/img/food.png" alt="" width="500" height="400">         
+          </div> 
+
+          <div class ="imagecat4" >
+           <img src="/img/dogplay.png" alt="" width="500" height="400">         
+          </div> 
+
+          
         </div>
       </div>
     </section>     
