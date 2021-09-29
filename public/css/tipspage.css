@@ -13,49 +13,49 @@ body{
 
 .imagecat{
   position: absolute;
-  top: 200px;
+  top: 300px;
   right: 35px;
 }
 
 .imagecat2{
   position: absolute;
-  top: 900px;
+  top: 1050px;
   left: 35px;
 }
 
 .imagecat3{
   position: absolute;
-  top: 1750px;
+  top: 1900px;
   right: 35px;
 }
 
 .imagecat4{
   position: absolute;
-  top: 2550px;
+  top: 2700px;
   left: 35px;
 }
 
 .dogfoot{
   position: absolute;
-  top: 200px;
+  top: 300px;
   right: 1268px;
 }
 
 .dogfoot2{
   position: absolute;
-  top: 900px;
+  top: 1050px;
   right: 225px;
 }
 
 .dogfoot3{
   position: absolute;
-  top: 1750px;
+  top: 1900px;
   right: 1268px;
 }
 
 .dogfoot4{
   position: absolute;
-  top: 2550px;
+  top: 2700px;
   right: 240px;
 }
 
@@ -71,21 +71,22 @@ body{
   position: absolute;
   text-align: left;
   left: 100px;
-  top: 250px;
+  top: 350px;
   font-size: 20px;
   color: #F737B0;
 
 }
 
 .semipara h2{
-  font-size: 50px;
+  top: 400px;
+  font-size: 80px;
   color: #F737B0;
 }
 
 .semipara2{
   position: absolute;
   right: 1025px;
-  top: 200px;
+  top: 300px;
   color: #F737B0;
 }
 
@@ -93,7 +94,7 @@ body{
   position: absolute;
   text-align: right;
   left: 500px;
-  top: 950px;
+  top: 1100px;
   right:50;
   font-size: 20px;
   color: #F737B0;
@@ -103,7 +104,7 @@ body{
 .semipara3{
   position: absolute;
   right: 50px;
-  top: 900px;
+  top: 1050px;
   color: #F737B0;
 }
 
@@ -111,7 +112,7 @@ body{
   position: absolute;
   text-align: left;
   left: 100px;
-  top: 1800px;
+  top: 1950px;
   right:50;
   font-size: 20px;
   color: #F737B0;
@@ -121,7 +122,7 @@ body{
 .semipara4{
   position: absolute;
   right: 1080px;
-  top: 1750px;
+  top: 1900px;
   color: #F737B0;
 }
 
@@ -129,7 +130,7 @@ body{
   position: absolute;
   text-align: right;
   left: 500px;
-  top: 2600px;
+  top: 2750px;
   right:50;
   font-size: 20px;
   color: #F737B0;
@@ -139,7 +140,7 @@ body{
 .semipara5{
   position: absolute;
   right: 50px;
-  top: 2550px;
+  top: 2700px;
   color: #F737B0;
 }
 
