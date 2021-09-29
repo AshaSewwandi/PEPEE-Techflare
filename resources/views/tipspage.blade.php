@@ -15,16 +15,16 @@
           </div> 
           <ul class="nav justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#section1">Home</a>
+              <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section2">About</a>
+              <a class="nav-link" href="http://127.0.0.1:8000/#section2">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section3">Services</a>
+              <a class="nav-link" href="http://127.0.0.1:8000/#section3">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section4">Contact</a>
+              <a class="nav-link" href="http://127.0.0.1:8000/#section4">Contact</a>
             </li> 
           </ul>
           
@@ -37,7 +37,7 @@
                 <h3>Veterinarian Visits</h3>
                 </div>
                 <div class ="dogfoot">
-                <img src="/img/dogfoot.jpeg" alt="" width="30" height="30">  
+                <img src="/img/006.png" alt="" width="30" height="30">  
 
                 </div>
                <div class ="para" >
@@ -49,7 +49,7 @@
                 <h3>Vaccinations</h3>
                 </div>
                 <div class ="dogfoot2">
-                <img src="/img/dogfoot.jpeg" alt="" width="30" height="30">  
+                <img src="/img/006.png" alt="" width="30" height="30">    
           </div>
           <div class ="para1" >
                                 
@@ -61,7 +61,7 @@
                 <h3>Healthy Food</h3>
                 </div>
                 <div class ="dogfoot3">
-                <img src="/img/dogfoot.jpeg" alt="" width="30" height="30">  
+                <img src="/img/006.png" alt="" width="30" height="30">  
           </div>
           <div class ="para2" >
                                 
@@ -80,7 +80,7 @@
                 <h3>Safe Playtime</h3>
                 </div>
                 <div class ="dogfoot4">
-                <img src="/img/dogfoot.jpeg" alt="" width="30" height="30">  
+                <img src="/img/006.png" alt="" width="30" height="30">   
           </div>
           <div class ="para3" >
                                 
