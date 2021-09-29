@@ -1,8 +1,8 @@
 <?php
 
 namespace Tests\Unit;
-
 //use PHPUnit\Framework\TestCase;
+use DB;
 use Tests\TestCase;
 use App\Models\User;
 class UserTest extends TestCase
@@ -48,17 +48,24 @@ class UserTest extends TestCase
         $this->assertTrue(true);
     }
 
-    public function test_it_stores_new_user()
-    {
-        $response = $this->post('/register',[
-            'name'=>'Vihanga Theekshana',
-            'email'=>'vihanga1998@gmail.com',
-            'address'=>'Katubedda Moratuwa',
-            'moboleNo'=>'0713456789',
-            'password'=>'12345678'
+    // public function test_it_stores_new_user()
+    // {
+    //     $response = $this->post('/register',[
+    //         'name'=>'Vihanga Theekshana',
+    //         'email'=>'vihanga1998@gmail.com',
+    //         'address'=>'Katubedda Moratuwa',
+    //         'moboleNo'=>'0713456789',
+    //         'password'=>'12345678'
             
-        ]);
+    //     ]);
 
-        $response->assertRedirect('/home');
+    //     $response->assertRedirect('/home');
+    // }
+
+    public function test_database()
+    {
+        $this->assertDatabaseHas('users',[
+            'name'=>'Lakmini Fernando'
+        ]);
     }
 }

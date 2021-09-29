@@ -7,7 +7,7 @@
        
     </head>
     <body>
-    <section id="section1" class="parallax" data-stellar-background-ratio="0.5">
+    <section id="section_1" class="parallax" data-stellar-background-ratio="0.5">
       <div class="container">
 				<div class="caption text-center text-white" data-stellar-ratio="0.7">    
           <div class="logo">
@@ -15,6 +15,7 @@
           </div> 
           <ul class="nav justify-content-end">
             <li class="nav-item">
+
               <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/">Home</a>
             </li>
             <li class="nav-item">
@@ -45,7 +46,12 @@
                     <p>Responsible pet ownership starts with regular visits to the veterinarian. <br> Given their shorter-than-human lifespan, your dog or cat should be getting <br>a checkup at least once or twice a year.Depending on your pet's vaccination <br>schedule,they may go more frequently when they're young, but establishing <br>and maintaining good pet health means keeping up with vet visits as they age.<br></p>
                     
                 </div>                    
-                <div class= "semipara3">
+                
+    </section>     
+    <section id="section_2" class="parallax" data-stellar-background-ratio="0.5">
+      <div class="container">
+				<div class="caption text-center text-white" data-stellar-ratio="0.7">          
+        <div class= "semipara3">
                 <h3>Vaccinations</h3>
                 </div>
                 <div class ="dogfoot2">
@@ -56,8 +62,15 @@
                     <p>Vaccinating your pets is a vital component of responsible pet care.Soon after <br> welcoming your new pet into your home, schedule an immunization appointment.  <br>During your first visit, the vet will set up an immunization schedule for your <br>little pup or kitten to protect them from illness and disease. Vaccinations for puppies<br> should happen early in your puppies first few weeks after you bring him home. </p>
                     <p>Talk to your vet at your first appointment, on when a good time to schedule that visit.<br>They help prevent diseases such as rabies, Lyme disease, and distemper. <br>Cats benefit from vaccines that prevent feline herpes virus, feline leukemia, <br>and rabies. If you've adopted an adult or senior animal, make sure <br>they are immunized, too. Vaccinations do need renewal and aren't just for young pets.<br></p>
                   </div>
-
-          <div class= "semipara4">
+        </div>
+      </div>
+    </section> 
+    
+    
+    <section id="section_3" class="parallax" data-stellar-background-ratio="0.5">
+      <div class="container">
+				<div class="caption text-center text-white" data-stellar-ratio="0.7">       
+        <div class= "semipara4">
                 <h3>Healthy Food</h3>
                 </div>
                 <div class ="dogfoot3">
@@ -75,8 +88,14 @@
         </div> 
         </div>
       </div>
+      </div>
+      </div>
+    </section>
 
-      <div class= "semipara5">
+    <section id="section_4" class="parallax" data-stellar-background-ratio="0.5">
+      <div class="container">
+				<div class="caption text-center text-white" data-stellar-ratio="0.7">       
+        <div class= "semipara5">
                 <h3>Safe Playtime</h3>
                 </div>
                 <div class ="dogfoot4">
@@ -106,28 +125,6 @@
           
         </div>
       </div>
-    </section>     
-    <section id="section2" class="parallax" data-stellar-background-ratio="0.5">
-      <div class="container">
-				<div class="caption text-center text-white" data-stellar-ratio="0.7">          
-        
-        </div>
-      </div>
-    </section> 
-    
-    
-    <section id="section3" class="parallax" data-stellar-background-ratio="0.5">
-      <div class="container">
-				<div class="caption text-center text-white" data-stellar-ratio="0.7">       
-        
-      </div>
-      </div>
-    </section>
-
-    <section id="section4" class="parallax" data-stellar-background-ratio="0.5">
-      <div class="container">
-				<div class="caption text-center text-white" data-stellar-ratio="0.7">       
-       
         </div>
         </div>
       </section>  
