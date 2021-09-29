@@ -37,7 +37,7 @@
                 <h3>Veterinarian Visits</h3>
                 </div>
                 <div class ="dogfoot">
-                <img src="/img/dogfoot.jpeg" alt="" width="30" height="30">  
+                <img src="/img/img006.png" alt="" width="30" height="30">  
 
                 </div>
                <div class ="para" >
@@ -49,7 +49,7 @@
                 <h3>Vaccinations</h3>
                 </div>
                 <div class ="dogfoot2">
-                <img src="/img/dogfoot.jpeg" alt="" width="30" height="30">  
+                <img src="/img/img006.png" alt="" width="30" height="30">   
           </div>
           <div class ="para1" >
                                 
@@ -61,7 +61,7 @@
                 <h3>Neutering</h3>
                 </div>
                 <div class ="dogfoot3">
-                <img src="/img/dogfoot.jpeg" alt="" width="30" height="30">  
+                <img src="/img/img006.png" alt="" width="30" height="30">   
           </div>
           <div class ="para2" >
                                 
@@ -80,7 +80,7 @@
                 <h3>Safe Playtime</h3>
                 </div>
                 <div class ="dogfoot4">
-                <img src="/img/dogfoot.jpeg" alt="" width="30" height="30">  
+               <img src="/img/img006.png" alt="" width="30" height="30"> 
           </div>
           <div class ="para3" >
                                 
