@@ -34,3 +34,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/AddMessage', [App\Http\Controllers\MessageController::class,'AddMessage']);
 
 Route::get('/StoreMessage', [App\Http\Controllers\MessageController::class,'StoreMessage']);
+
+
