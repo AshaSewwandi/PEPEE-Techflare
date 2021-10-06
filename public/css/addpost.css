@@ -149,14 +149,6 @@ a:active {
 text-decoration: underline;
 
 }
-/* .text-right{
-  position: absolute;
-  left: 120px;
-  top: 470px;
-  font-size: 70px;
-  font-family:Segeo UI;
-
-} */
 .btn.btn-primary-3{
   background-color:#F737B0;
   border-radius: 30px;
@@ -164,6 +156,7 @@ text-decoration: underline;
   position: relative;
   right: 5px;
   top:-40px;
+  padding:5px 20px;
   font-size: 20px;
   font-family:Segeo UI;
 }
@@ -174,7 +167,7 @@ text-decoration: underline;
   position: relative;
   right: 5px;
   top:-20px;
-  padding:10px 20px;
+  padding:3px 20px;
   font-size: 20px;
   font-family:Segeo UI;
 }
@@ -207,3 +200,28 @@ img.img-circle.avatar{
   position: absolute;
   left:10px;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:#BF11DD;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
