@@ -5,23 +5,24 @@ body{
     background-position: center;
     background-size: 100% 100%;
     overflow-x: hidden;
-    overflow-y: hidden;    
+    overflow-y: hidden; 
+       
 }
 .profile{
-    position: absolute;
-    left: 1200px;
+    position:absolute;
+    left: 1500px;
     top: -10px;
     font-size: 30px;
     color:#BF11DD;
     font-family:Segeo UI;
 }
-hr {
+/* hr {
     border: 1px solid #F737B0;  
-}
+} */
 .card {
   position:absolute;
   top:-25px;
-  left: 1085px;
+  left: 1100px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 400px;
   margin: auto;
@@ -61,6 +62,9 @@ h2{
 bottom:10px;
 right:5px;
 }
+h3{
+  color:#F737B0;
+}
 
 button:hover, a:hover {
 opacity: 0.7;
@@ -82,7 +86,7 @@ width: 200px;
 height: 200px;
 border-radius: 50%;
 position:relative;
-left:10px;
+right:10px;
 bottom:30px;
 border-color: #F737B0;
 }
@@ -149,17 +153,6 @@ a:active {
 text-decoration: underline;
 
 }
-.btn.btn-primary-3{
-  background-color:#F737B0;
-  border-radius: 30px;
-  color:#ffffff;
-  position: relative;
-  right: 5px;
-  top:-40px;
-  padding:5px 20px;
-  font-size: 20px;
-  font-family:Segeo UI;
-}
 .btn.btn-primary-4{
   background-color: #ffffff;
   border-radius: 30px;
@@ -172,19 +165,14 @@ text-decoration: underline;
   font-family:Segeo UI;
 }
 .btn {
-  border: 2px solid black;
+  border: 2px solid;
   background-color: white;
-  color: black;
   padding: 5px 28px;
   font-size: 16px;
   cursor: pointer;
 }
 .btn-primary-4 {
   border-color: #F737B0; 
-}
-.btn-primary-3 {
-  border-color: #ffffff;
-  
 }
 img.img-circle.avatar{
   position : relative;
@@ -225,3 +213,118 @@ img.img-circle.avatar{
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #F737B0;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 30px;
+  position: relative;
+  right: 5px;
+  top:-40px;
+  padding:3px 35px;
+  font-size: 20px;
+  font-family:Segeo UI;
+  border: 2px solid #ffffff;
+}
+.modal-content{
+  float:left;
+  max-width: 100%;
+  height: 600px;
+  background-color: ffffff;
+  border: 2px solid #F737B0;
+}
+.modal-header{
+  background-color: #F3F0F0;
+  color: #F737B0;
+  font-size: 20px;
+}
+.modal-body{
+  color: #F737B0;
+  font-weight: bold;
+  font-size: 18px;
+  position:relative;
+  left:10px;
+}
+.form-control{
+  background-color: #EEEAEA;
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px;
+  height: 40px;
+}
+.custom-select{
+  background-color: #EEEAEA;
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px;
+}
+.form-group-row{
+  margin:10px auto;
+	max-width: 400px;
+}
+::placeholder {
+  font-size: 1em;
+  color: #F737B0;
+}
+.btn.btn-primary-1{
+  background-color: #F737B0;
+  border-radius: 20px;
+  color:#ffffff;
+  border: none;
+  position: relative;
+  left: 5px;
+  font-size: 20px;
+  border: 2px solid #F737B0;
+}
+.btn.btn-primary-2{
+  background-color: #ffffff;
+  border-radius: 20px;
+  color:#F737B0;
+  position: relative;
+  left: 10px;
+  font-size: 20px;
+  border: 2px solid #F737B0;
+}
+.custom-select{
+  background-color:#EEEAEA;
+}
+input[type=file] {
+  width: 70%;
+  padding: 5px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 2px solid #F737B0;
+}
+input[type=text] {
+  width: 70%;
+  padding: 5px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+   border-radius: 10px;
+   border: 2px solid #F737B0;
+}
+label{
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.col-25 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 90%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
