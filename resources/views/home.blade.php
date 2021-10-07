@@ -73,7 +73,7 @@
                             
                         <button onclick="location.href='{{ url('/editprofile') }}'" type="button" class="open-button">Edit Profile</button>
 
-                        <button type="button" class="btn btn-primary-4" >Add New Post</button>
+                        <button onclick="location.href='{{ url('/Addpost') }}'" type="button" class="btn btn-primary-4" >Add New Post</button>
  
                     </div>
                 </div> 
