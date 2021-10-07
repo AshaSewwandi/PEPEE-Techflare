@@ -41,4 +41,7 @@ Route::get('/AddMessage', [App\Http\Controllers\MessageController::class,'AddMes
 
 Route::get('/StoreMessage', [App\Http\Controllers\MessageController::class,'StoreMessage']);
 
+// edit profile
+Route::get('/editprofile', [App\Http\Controllers\UserController::class,'index']);
+
 

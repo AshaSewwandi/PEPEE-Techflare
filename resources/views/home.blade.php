@@ -71,7 +71,7 @@
 
                         <p>Contact :<br>{{ Auth::user()->mobileNo }} </p>
                             
-                        <button type="button" class="open-button" >Edit Profile</button>
+                        <button onclick="location.href='{{ url('/editprofile') }}'" type="button" class="open-button">Edit Profile</button>
 
                         <button type="button" class="btn btn-primary-4" >Add New Post</button>
  

@@ -28,7 +28,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="/css/addpost.css" rel="stylesheet">
+    <link href="/css/home.css" rel="stylesheet">
     <style>
         #navbarDropdown{
             position:absolute;
