@@ -73,8 +73,9 @@
                             
                         <button type="button" class="open-button" >Edit Profile</button>
 
-                        <button type="button" class="btn btn-primary-4" >Add New Post</button>
- 
+                    <!--   <button type="button" class="btn btn-primary-4" >Add New Post</button>-->
+                    <!-- <button type="button" class="btn btn-primary-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Add New Post</button> -->
+                    <a href="/Addpost" class="btn btn-primary-4">Add New Post</a>
                     </div>
                 </div> 
             </div>   

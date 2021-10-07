@@ -24,7 +24,7 @@ Route::get('/tipspage', function () {
     return view('tipspage');
 });
 
-Route::get('/addpost',[App\Http\Controllers\PostController::class,'addpost']);
+Route::get('/Addpost',[App\Http\Controllers\PostController::class,'Addpost']);
 Route::get('/viewpost',[App\Http\Controllers\PostController::class,'viewpost']);
 
 Auth::routes();
