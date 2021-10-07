@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
     public function addpost(){
-        return view('addpost');  
+        return view('home');  
     }
 
     public function viewpost(){
