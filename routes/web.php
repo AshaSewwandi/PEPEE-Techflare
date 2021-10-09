@@ -24,6 +24,10 @@ Route::get('/tipspage', function () {
     return view('tipspage');
 });
 
+Route::get('/healthcenterspage', function () {
+    return view('healthcenterspage');
+});
+
 Route::get('/addpost',[App\Http\Controllers\PostController::class,'addpost']);
 Route::get('/viewpost',[App\Http\Controllers\PostController::class,'viewpost']);
 
