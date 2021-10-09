@@ -63,7 +63,7 @@ body{
 .nav.justify-content-end li a{
   color: #F737B0;  
   font-family:Segeo UI; 
-  font-size: 30px;
+  font-size: 25px;
 }
 
 
@@ -144,28 +144,28 @@ body{
   color: #F737B0;
 }
 
-#section1 {
+#section_1 {
   height: 840px;
   background-image: url('/img/img5.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#section2 {
+#section_2 {
   height: 840px;
   background-image: url('/img/img5.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#section3 {
+#section_3 {
   height: 840px;
   background-image: url('/img/img5.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#section4 {
+#section_4 {
   height: 840px;
   background-image: url('/img/img5.jpg');
   background-position: center;

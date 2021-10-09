@@ -29,12 +29,26 @@ Route::get('/healthcenterspage', function () {
 });
 
 Route::get('/addpost',[App\Http\Controllers\PostController::class,'addpost']);
+
+Route::get('/Addpost',[App\Http\Controllers\PostController::class,'Addpost']);
+
 Route::get('/viewpost',[App\Http\Controllers\PostController::class,'viewpost']);
 
 Auth::routes();
+
+Route::get('/forget-password', 'App\Http\Controllers\Auth\ForgotPasswordController@getEmail');
+Route::post('/forget-password', 'App\Http\Controllers\Auth\ForgotPasswordController@postEmail');
+
+Route::get('/reset-password/{token}', 'App\Http\Controllers\Auth\ResetPasswordController@getPassword');
+Route::post('/reset-password', 'App\Http\Controllers\Auth\ResetPasswordController@updatePassword');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/AddMessage', [App\Http\Controllers\MessageController::class,'AddMessage']);
 
 Route::get('/StoreMessage', [App\Http\Controllers\MessageController::class,'StoreMessage']);
+
+// edit profile
+Route::get('/editprofile', [App\Http\Controllers\UserController::class,'index']);
+
+
