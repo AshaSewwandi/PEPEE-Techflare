@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 use App\Models\User;
 use DB;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\File;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -12,9 +15,9 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-        return view('editprofile');
+        //
     }
 
     /**
@@ -25,6 +28,7 @@ class UserController extends Controller
     public function create()
     {
         //
+
     }
 
     /**
@@ -57,7 +61,10 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        
+        $data = User::find($id) ;
+        return view('editprofile')->with('users',$data);
+        
     }
 
     /**
@@ -67,9 +74,41 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $id=$request->id;
+        $name=$request->name;
+        $address=$request->address;
+        $email=$request->email;
+        $image=$request->image;
+        $mobileNo=$request->mobileNo;
+
+        $data =User::find($id);
+
+        $data->name=$name;
+        $data->address=$address;
+        $data->email=$email;
+        $data->mobileNo=$mobileNo;
+       $data->image=$image;
+
+        // if($request->hasfile('image')){
+        //     $file=$request->file('image');
+        //     $extension=$file->getClientOriginalExtension();//get image extension
+        //     $filename= time().'.'.$extension;
+        //     $file->move('uploads/users/',$filename); 
+        //     $data->image=$filename;
+        //     }else{
+        //         return $request;
+        //         $data->image = '';
+        // }
+
+       
+
+        $data->save();
+
+        $datas = User::all();
+
+        return view('home')->with('users',$datas);
     }
 
     /**
