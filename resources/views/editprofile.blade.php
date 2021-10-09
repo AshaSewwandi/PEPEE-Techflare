@@ -6,13 +6,15 @@
 <body>
     <div class="container">
         <h1>Edit Profile</h1>
-        <form action="/action_page.php" method="post" id="myform">
+        <form action="/updateprofile" method="post" >
+        @csrf
+            <input type="hidden" name="id" value="{{$users->id}}">
             <div class="row">
                 <div class="col-25">
                     <label for="file" ><b>Image:</b></label>
                 </div>
                 <div class="col-75">
-                    <input type="file" name="image" value="{{Auth::user()->image}}">
+                    <input type="file" name="image" value="{{$users->image}}">
                 </div>
             </div>
             <div class="row">
@@ -20,7 +22,7 @@
                     <label for="name" ><b>Name:</b></label>
                 </div>
                 <div class="col-75">
-                    <input type="text" placeholder="Enter Name" name="name" value="{{Auth::user()->name}}">
+                    <input type="text"  name="name" value="{{$users->name}}">
                 </div>
             </div>
             <div class="row">
@@ -28,7 +30,7 @@
                     <label for="address" ><b>Address:</b></label>
                 </div>
                 <div class="col-75">
-                    <input type="text" placeholder="Enter Address" name="address" value="{{Auth::user()->address}}">
+                    <input type="text"  name="address" value="{{$users->address}}">
                 </div>
             </div>
             <div class="row">
@@ -36,7 +38,7 @@
                     <label for="email"><b>Email:</b></label>
                 </div>
                 <div class="col-75">
-                    <input type="text" placeholder="Enter Email" name="email" value="{{Auth::user()->email}}" >
+                    <input type="text"  name="email" value="{{$users->email}}" >
                 </div> 
             </div>                        
             <div class="row">
@@ -44,14 +46,16 @@
                     <label for="contact"><b>Contact:</b></label>
                 </div>
                 <div class="col-75">
-                    <input type="text" placeholder="Enter Contact Number" name="mobileNo"  value="{{Auth::user()->mobileNo}}">
+                    <input type="text"  name="mobileNo"  value="{{$users->mobileNo}}">
                 </div>
-            </div>    
+            </div>
+               
             <br><br>                           
             <div class="row">
-                <button type="button" class="btn btn-primary-5" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary-6" data-target="#exampleModal" data-toggle="modal" >Save changes</button>
-            </div>           
+                <button type="button" class="btn btn-primary-5"value="close" >Close</button>
+                <button type="submit" class="btn btn-primary-6" value="update" >Save changes</button>
+            </div> 
+                      
         </form> 
     </div>  
 </body>

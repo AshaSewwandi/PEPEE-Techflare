@@ -59,22 +59,27 @@
             <div class="pull-left container1">
                 <div class="card" >
                     <div class="card-head">
+                    
+                    
                     <img class="avatar" src="/img/profile.png" alt="Card image" >
+                   
                     <h2><i>{{ Auth::user()->name }} </i></h2>
                     <br>
 
                     </div>
                     <div class="card-body">
-                        <p>Name : <br>{{ Auth::user()->name }}</p>
+                        <p>Name : <br>{{Auth::user()->name }}</p>
 
                         <p>Email : {{ Auth::user()->email }} </p>
 
                         <p>Contact :<br>{{ Auth::user()->mobileNo }} </p>
                             
-                        <button onclick="location.href='{{ url('/editprofile') }}'" type="button" class="open-button">Edit Profile</button>
-
+                        <button onclick="location.href='editprofile/{{ Auth::user()->id }}'" type="button" class="btn btn-primary-4" >Edit Profile</button>
+                        <br><br>
+                       
                         <button onclick="location.href='{{ url('/Addpost') }}'" type="button" class="btn btn-primary-4" >Add New Post</button>
- 
+                        
+                    
                     </div>
                 </div> 
             </div>   
