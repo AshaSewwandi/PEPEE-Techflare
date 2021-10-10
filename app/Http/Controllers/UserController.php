@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\User;
 use DB;
+use App\Models\Post;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\File;
 use Illuminate\Support\Facades\Auth;
@@ -20,11 +21,12 @@ class UserController extends Controller
         //
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    public function AddUser()
+    {       
+        $user = User::find($id);
+        $posts = $user->posts()->get();
+    }
+    
     public function create()
     {
         //

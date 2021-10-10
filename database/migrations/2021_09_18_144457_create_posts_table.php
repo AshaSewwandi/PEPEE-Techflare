@@ -14,7 +14,7 @@ class CreatePostsTable extends Migration
     public function up()
     {
         Schema::create('posts', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('post_id');
             $table->string('description');
             $table->mediumText('image');
             $table->string('location');
@@ -22,10 +22,11 @@ class CreatePostsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users'); 
             $table->timestamps();
             $table->softDeletes();
-
         });
     }
 
+
+    
     /**
      * Reverse the migrations.
      *

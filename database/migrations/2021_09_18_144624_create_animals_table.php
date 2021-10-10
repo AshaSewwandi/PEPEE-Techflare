@@ -14,16 +14,15 @@ class CreateAnimalsTable extends Migration
     public function up()
     {
         Schema::create('animals', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('animal_id');
             $table->string('type');
             $table->string('age');
-            $table->string('breed');
-            $table->string('location');
-            $table->string('vaccination');
-            $table->mediumText('image');
-            $table->string('sex');
+            $table->string('location')->nullable();
+            $table->string('vaccination')->nullable();
+            $table->mediumText('image')->nullable();
+            $table->string('sex')->nullable();
             $table->unsignedBigInteger('post_id');
-            $table->foreign('post_id')->references('id')->on('posts');
+            $table->foreign('post_id')->references('post_id')->on('posts');
             $table->timestamps();
             $table->softDeletes();
         });
