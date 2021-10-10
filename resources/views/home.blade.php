@@ -77,7 +77,7 @@
                         <button onclick="location.href='editprofile/{{ Auth::user()->id }}'" type="button" class="btn btn-primary-4" >Edit Profile</button>
                         <br><br>
                        
-                        <button onclick="location.href='{{ url('/Addpost') }}'" type="button" class="btn btn-primary-4" >Add New Post</button>
+                        <button onclick="location.href='Addpost/{{ Auth::user()->id }}'" type="button" class="btn btn-primary-4" >Add New Post</button>
                         
                     
                     </div>
