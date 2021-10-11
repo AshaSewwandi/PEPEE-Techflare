@@ -18,6 +18,7 @@ padding: 12px;
 border: 1px solid #ccc;
 border-radius: 4px;
 resize: vertical;
+background-color: #f2f2f2;;
 }
 
 label {
@@ -27,7 +28,7 @@ display: inline-block;
 
 input[type=submit] {
 background-color: #4CAF50;
-color: white;
+color: #ffffff;
 padding: 12px 20px;
 border: none;
 border-radius: 4px;
@@ -41,7 +42,7 @@ background-color: #45a049;
 
 .container {
 border-radius: 5px;
-background-color: #f2f2f2;
+background-color: #ffffff;
 padding: 20px;
 width: 800px;
 position:relative;
@@ -53,15 +54,19 @@ color:#F737B0;
 }
 
 .col-25 {
-float: left;
+/* float: left; */
 width: 20%;
 margin-top: 6px;
+position:relative;
+left:50px;
 }
 
 .col-75 {
-float: left;
+/* float: left; */
 width: 80%;
 margin-top: 6px;
+position:relative;
+left:70px;
 }
 
 /* Clear floats after the columns */
@@ -82,9 +87,10 @@ margin-top: 0;
 background-color: #F737B0;
 border-radius: 20px;
 color:#ffffff;
+padding:3px 25px;
 border: none;
 position: relative;
-left:350px;
+left:400px;
 top:20px;
 font-size: 20px;
 border: 2px solid #F737B0;
@@ -93,12 +99,15 @@ border: 2px solid #F737B0;
 background-color: #ffffff;
 border-radius: 20px;
 color:#F737B0;
+padding:3px 25px;
 position: relative;
-left: 380px;
+left: 425px;
 top:20px;
 font-size: 20px;
 border: 2px solid #F737B0;
 } 
 h1{
 color:#F737B0;
+position:relative;
+left: 40px;
 }

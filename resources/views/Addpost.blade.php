@@ -83,6 +83,7 @@
                          </div>
                         <button type="submit" class="btn btn-primary-1" value="Submit" >Add Post</button>
                         <button type="Reset" class="btn btn-primary-2" value="Reset">Cancel</button>
+                
                     </form>
                 </div>       
             </div>   
