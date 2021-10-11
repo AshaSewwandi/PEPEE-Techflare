@@ -53,4 +53,5 @@ Route::get('/StoreMessage', [App\Http\Controllers\MessageController::class,'Stor
 // edit profile
 Route::get('/editprofile/{id}', [App\Http\Controllers\UserController::class,'edit']);
 Route::post('/updateprofile', [App\Http\Controllers\UserController::class,'update']);
+Route::get('/close', [App\Http\Controllers\UserController::class,'index']);
 //Route::post('/updateprofile', [App\Http\Controllers\UserController::class,'create']);

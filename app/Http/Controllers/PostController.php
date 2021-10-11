@@ -20,7 +20,7 @@ class PostController extends Controller
     }
 
     public function index(){
-        
+ 
     }
 
     public function Addpost(Request $request)

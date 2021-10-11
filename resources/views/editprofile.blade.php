@@ -7,6 +7,7 @@
 <body>
     <div class="container">
         <h1>Edit Profile</h1>
+        <br>
         <form action="/updateprofile" method="post" >
         @csrf
             <input type="hidden" name="id" value="{{$users->id}}">
@@ -51,10 +52,10 @@
                 </div>
             </div>
                
-            <br><br>                           
+            <br>                           
             <div class="row">
-                <button type="button" class="btn btn-primary-5"value="close" >Close</button>
-                <button type="submit" class="btn btn-primary-6" value="update" >Save changes</button>
+            <button onclick="location.href='/close'" type="button" class="btn btn-primary-5" >Close</button>
+            <button type="submit" class="btn btn-primary-6" value="update" >Save changes</button>
             </div> 
                       
         </form> 
