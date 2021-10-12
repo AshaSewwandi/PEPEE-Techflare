@@ -28,20 +28,54 @@
               <a class="nav-link" href="#section4">Contact</a>
             </li> 
           </ul>
-          
-          <html>
-            
-          <table>
-          <tr>
 
+<div class="split left">
+<div class="flip-card">
+   <div class="column">
+        <label for="pname">Filter result by Province</label>
+        <select id="pname" name="Select Province">
+        <option >Select Province</option>
+          <option >Western Province</option>
+          <option >Central Province</option>
+          <option >Southern Provinc</option>
+        </select>
+
+        <label for="dname">Filter result by District</label>
+        <select id="dname" name="Select District">
+        <option >Select District</option>
+          <option >Colombo District</option>
+          <option >Gampaha District</option>
+          <option >Moratua District</option>
+        </select>
+
+        <label for="dvname">Filter result by Division</label>
+        <select id="dvname" name="Select Division">
+        <option >Select Division</option>
+          <option >Kaduwela</option>
+          <option >Kesbawa</option>
+          <option >Kolonna</option>
+        </select>
+    
+        <input type="submit"></input>
+      </form>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="split right">
           <div class="top">
-          <h3>Home> Pet Care Centers</h3>
+          <h1>Home > Pet Care Centers</h1>
           </div>
-  <th>Western province - Colombo District</th>   
-  <tr>
-  <tr>
-    <th>Vaterinary Divison</th>
-    <th>Contact Number</th>
+          <table>
+            <div class = "pname">
+         
+          <th colspan="2">Western province - Colombo District </th>
+
+          <tr>
+          <th>Vaterinary Divison</th>
+          <th>Contact Number</th>
+</tr>
     
   <tr>
     <td>Colombo</td>
@@ -75,39 +109,8 @@
     <td>Moratuwa</td>
     <td>0712545789</td>
   </tr>
-  
-
-  
+</div>
 </table>
-        
-          
-        </div>
-      </div>
-    </section>     
-    <section id="section2" class="parallax" data-stellar-background-ratio="0.5">
-      <div class="container">
-				<div class="caption text-center text-white" data-stellar-ratio="0.7">          
-        
-        </div>
-      </div>
-    </section> 
-    
-    
-    <section id="section3" class="parallax" data-stellar-background-ratio="0.5">
-      <div class="container">
-				<div class="caption text-center text-white" data-stellar-ratio="0.7">       
-        
-      </div>
-      </div>
-    </section>
-
-    <section id="section4" class="parallax" data-stellar-background-ratio="0.5">
-      <div class="container">
-				<div class="caption text-center text-white" data-stellar-ratio="0.7">       
-       
-        </div>
-        </div>
-      </section>  
-        
-    </body>
+</section>     
+</body>
 </html>

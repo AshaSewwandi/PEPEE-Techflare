@@ -21,27 +21,48 @@ table, th, td {
   padding: 15px;
   text-align: left;
   top: 300px;
-  border: 1px solid black;
+  border: 1px solid #F737B0;
   border-collapse: collapse;
 }
 
 table, th, td {
+  width: 750px;
   left: 600px;
   top: 200px;
-  border: 1px solid white;
+  border: 2px solid white;
   border-collapse: collapse;
 }
-th, td {
-  top: 300px;
-  background-color: #f0b0d8;
+
+.pname{
+  color: #F737B0;  
+  font-family:Segeo UI; 
+  font-size: 30px;
+
 }
 
-.top h3{
-  position: absolute;
-  text-align: center;
-  left: 600px;
-  top: 100px;
-  font-size: 20px;
+th{
+  color: #f7f4f6;  
+  font-family:Segeo UI; 
+  font-size: 30px;
+  background-color: #F737B0;
+}
+
+td {
+  height: 50px;
+  top: 300px;
+  background-color: #f7daee;
+}
+
+tr{
+  color: #db3aa0;  
+  font-family:Segeo UI; 
+  font-size: 30px;
+}
+
+.top h1{
+  position: position;
+  top: 250;
+  left: 100px;
   color: #F737B0;
 }
 
@@ -52,24 +73,90 @@ th, td {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#section2 {
+
+.conteiner{
+  position:relative;
+  left: 350px;
+  top:150px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #F737B0;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  resize: vertical;
+  font-size: smaller ;
+}
+
+input[type=submit] {
+  background-color: #F737B0;
+  color: #f8f8f8;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  top: 600px;
+  left: 50px;
+  position: absolute;
+}
+
+.input[type=submit]:hover {
+  background-color: #f5aadc;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+ .text h2{
+  color: #F737B0;  
+  font-family:Segeo UI; 
+  font-size: 50px;
+ }
+
+ .column{
+  color: #F737B0;  
+  font-family:Segeo UI; 
+  font-size: 30px;
+ }
+
+ .top{
+  color: #f785cd;  
+  font-size: 30px;
+ }
+
+ .split {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 95px;
+  padding-top: 20px;
+  right:40px;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  background-color: rgb(247, 239, 246);
+  border: 1px solid #F737B0;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.right {
+  right: 400px;
   height: 840px;
   background-image: url('/img/img5.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#section3 {
-  height: 840px;
-  background-image: url('/img/img5.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#section4 {
-  height: 840px;
-  background-image: url('/img/img5.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.flip-card{
+  position: absolute;
+  left: 150;
 }
