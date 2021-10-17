@@ -50,6 +50,8 @@ Route::get('/AddMessage', [App\Http\Controllers\MessageController::class,'AddMes
 
 Route::get('/StoreMessage', [App\Http\Controllers\MessageController::class,'StoreMessage']);
 
+Route::get('/viewpost',[App\Http\Controllers\AnimalController::class,'viewpost']);
+
 // edit profile
 Route::get('/editprofile/{id}', [App\Http\Controllers\UserController::class,'edit']);
 Route::post('/updateprofile', [App\Http\Controllers\UserController::class,'update']);
