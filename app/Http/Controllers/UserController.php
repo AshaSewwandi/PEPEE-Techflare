@@ -91,20 +91,15 @@ class UserController extends Controller
         $data->address=$address;
         $data->email=$email;
         $data->mobileNo=$mobileNo;
-       $data->image=$image;
 
-        // if($request->hasfile('image')){
-        //     $file=$request->file('image');
-        //     $extension=$file->getClientOriginalExtension();//get image extension
-        //     $filename= time().'.'.$extension;
-        //     $file->move('uploads/users/',$filename); 
-        //     $data->image=$filename;
-        //     }else{
-        //         return $request;
-        //         $data->image = '';
-        // }
+        if($request->hasFile('image')){
+            $destination_path = 'public/images/users';
+            $image = $request->file('image');
+            $image_name = $image->getClientOriginalName();
+            $path = $request->file('image')->storeAs($destination_path, $image_name);
 
-       
+            $data['image'] = $image_name;
+        }
 
         $data->save();
 
