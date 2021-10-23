@@ -8,12 +8,12 @@
     <div class="container">
         <h1>Edit Profile</h1>
         <br>
-        <form action="/updateprofile" method="post" >
+        <form action="/updateprofile" method="post" enctype="multipart/form-data">
         @csrf
             <input type="hidden" name="id" value="{{$users->id}}">
             <div class="row">
                 <div class="col-25">
-                    <label for="file" ><b>Image:</b></label>
+                    <label for="image" ><b>Image:</b></label>
                 </div>
                 <div class="col-75">
                     <input type="file" name="image" value="{{$users->image}}">

@@ -60,8 +60,11 @@
                 <div class="card" >
                     <div class="card-head">
                     
-                    
-                    <img class="avatar" src="/img/profile.png" alt="Card image" >
+                    @if(Auth::user()->image)
+                    <img src=" {{ asset ('storage/images/users/' . Auth::user()->image) }}" alt="Card image" class="avatar" >
+                    @else
+                    <img src="/img/profile.png" alt="Card image" class="avatar">
+                    @endif
                    
                     <h2><i>{{ Auth::user()->name }} </i></h2>
                     <br>
