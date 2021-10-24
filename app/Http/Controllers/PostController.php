@@ -42,9 +42,18 @@ class PostController extends Controller
         $post=new Post;
         $post->post_id=$request->post_id;
         $post->description=$request->description;
-        $post->image=$request->image;
         $post->location=$request->location;
         $post->user_id=$request->user_id;
+
+        if($request->hasFile('image')){
+            $destination_path = 'public/images/posts';
+            $image = $request->file('image');
+            $image_name = $image->getClientOriginalName();
+            $path = $request->file('image')->storeAs($destination_path, $image_name);
+
+            $post['image'] = $image_name;
+        }
+
         $post->save();
 
         $animal=new Animal;
@@ -53,15 +62,25 @@ class PostController extends Controller
         $animal->age=$request->age;
         $animal->location=$request->location;
         $animal->vaccination=$request->vaccination;
-        $animal->image=$request->image;
         $animal->sex=$request->sex;
         $animal->post_id=$post->post_id;
+
+        if($request->hasFile('image')){
+            $destination_path = 'public/images/posts';
+            $image = $request->file('image');
+            $image_name = $image->getClientOriginalName();
+            $path = $request->file('image')->storeAs($destination_path, $image_name);
+
+            $animal['image'] = $image_name;
+        }
         $animal->save();
+        $post = Post::all();
 
        //return back()->with('success','Post add successfully');
-        return view('home')->with('post',$post);
+        return view('home')->with('posts',$post);
 
 
     }
+
     
 }

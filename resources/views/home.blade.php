@@ -12,7 +12,11 @@
                               <div class="panel panel-white post panel-shadow">
                                   <div class="post-heading">
                                       <div class="pull-left image">
-                                          <img src="/img/profile.png" class="img-circle avatar" alt="user profile image">    
+                                            @if(Auth::user()->image)
+                                            <img src=" {{ asset ('storage/images/users/' . Auth::user()->image) }}" alt="user profile image" class="img-circle avatar" >
+                                            @else
+                                            <img src="/img/profile.png" alt="user profile image" class="img-circle avatar">
+                                            @endif   
                                       </div>
                                       <div class="pull-right meta">
                                       <a><i onclick="myFunction()" class="material-icons"style="font-size:48px">&#xe5d3;</i></a>
@@ -40,11 +44,11 @@
                                                     }
                                                 }
                                                 }
-                                                </script>
+                                            </script>
                                       </div>
                                   </div>
                                   <div class="post-image">
-                                      <img src="/img/cat1.jpg" class="image" alt="image post">
+                                      <img src="/img/cat1.jpg" class="image" alt="image post">              
                                   </div>
                                   <div class=" post-description">
                                       <h4><a href="#">View Post</a></h4>
@@ -77,7 +81,7 @@
 
                         <p>Contact :<br>{{ Auth::user()->mobileNo }} </p>
                             
-                        <button onclick="location.href='editprofile/{{ Auth::user()->id }}'" type="button" class="btn btn-primary-4" >Edit Profile</button>
+                        <button onclick="location.href='editprofile/{{ Auth::user()->id }}'" type="button" class="btn btn-primary-3" >Edit Profile</button>
                         <br><br>
                        
                         <button onclick="location.href='Addpost/{{ Auth::user()->id }}'" type="button" class="btn btn-primary-4" >Add New Post</button>

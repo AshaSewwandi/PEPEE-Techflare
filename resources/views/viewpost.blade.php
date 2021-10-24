@@ -70,7 +70,7 @@
                         <br>
                         <div class="card flex-row flex-wrap" >
                             <div class="card-header border-0">
-                                <img src="{{ asset('uploads/post/') }}" width=150px height=150px>
+                                <img src=" {{ asset ('storage/images/posts/' . $animal->image) }}" width=150px height=150px>
                             </div>
                             <div class="card-block px-2">
                                 <h4 class="card-title">Type: {{$animal->type}}</h4>

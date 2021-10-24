@@ -151,6 +151,18 @@ text-decoration: underline;
   position: relative;
   right: 5px;
   top:-20px;
+  width:180px;
+  padding:2px 20px;
+  font-size: 20px;
+  font-family:Segeo UI;
+}
+.btn.btn-primary-3{
+  background-color: #F737B0;
+  border-radius: 30px;
+  color:#ffffff;
+  position: relative;
+  right: 5px;
+  top:-20px;
   padding:3px 20px;
   font-size: 20px;
   font-family:Segeo UI;
@@ -164,6 +176,9 @@ text-decoration: underline;
 }
 .btn-primary-4 {
   border-color: #F737B0; 
+}
+.btn-primary-3{
+  border-color: #ffffff; 
 }
 img.img-circle.avatar{
   position : relative;
