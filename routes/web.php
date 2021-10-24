@@ -29,7 +29,7 @@ Route::get('/healthcenterspage', function () {
 });
 
 Route::get('/Addpost/{id}',[App\Http\Controllers\PostController::class,'Addpost']);
-Route::get('/StorePost',[App\Http\Controllers\PostController::class,'StorePost']);
+Route::post('/StorePost',[App\Http\Controllers\PostController::class,'StorePost']);
 Route::get('/StoreUser',[App\Http\Controllers\UserController::class,'StoreUser']);
 Route::get('/viewpost',[App\Http\Controllers\PostController::class,'viewpost']);
 Route::get('/showpost',[App\Http\Controllers\PostController::class,'showpost']);

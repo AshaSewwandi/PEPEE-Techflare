@@ -25,7 +25,7 @@
                 <h3 class="form-title"><b>Add Post</b></h3>
             </div>
             <div class="card-body">
-                <form action="/StorePost" >
+                <form action="/StorePost" method="post" enctype="multipart/form-data">
                     @csrf
                     <input type="hidden" name="user_id" value="{{Auth::user()->id}}" readonly>
                         <div class="form-group row">
