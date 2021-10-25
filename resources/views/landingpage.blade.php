@@ -74,7 +74,7 @@
               <li><i class="fas fa-link "> <a href="http://127.0.0.1:8000/login"> Find homes for pets</a></i></li>
               <li><i class="fas fa-link "> <a href="http://127.0.0.1:8000/viewpost">Find pets for adoption</a></i></li>
               <li><i class="fas fa-link "> <a href="http://127.0.0.1:8000/tipspage">Tips to take care of your pets</a></i></li>
-              <li><i class="fas fa-link "> <a href="url">Pet Care Center</a></i></li>
+              <li><i class="fas fa-link "> <a href="http://127.0.0.1:8000/petcarepage">Pet Care Center</a></i></li>
             </ul>
             </div>
         <div class="section2-image3"></div>
@@ -135,7 +135,7 @@
                 <a href="http://127.0.0.1:8000/tipspage" class="text-reset">Care Tips</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Pet Care Center</a>
+                <a href="http://127.0.0.1:8000/petcarepage" class="text-reset">Pet Care Center</a>
               </p>
             </div>
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">

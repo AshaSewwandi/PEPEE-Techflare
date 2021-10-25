@@ -64,6 +64,8 @@ body{
   color: #F737B0;  
   font-family:Segeo UI; 
   font-size: 25px;
+  position: relative;
+  left:150px;
 }
 
 
