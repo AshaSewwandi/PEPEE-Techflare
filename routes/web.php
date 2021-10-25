@@ -24,7 +24,7 @@ Route::get('/tipspage', function () {
     return view('tipspage');
 });
 
-Route::get('/healthcenterspage', function () {
+Route::get('/petcarepage', function () {
     return view('healthcenterspage');
 });
 

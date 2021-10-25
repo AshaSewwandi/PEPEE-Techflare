@@ -1,4 +1,5 @@
 body{
+  background-image: url('/img/img5.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -14,7 +15,14 @@ body{
 .nav.justify-content-end li a{
   color: #F737B0;  
   font-family:Segeo UI; 
-  font-size: 30px;
+  font-size: 25px;
+  position: relative;
+  left:150px;
+}
+.table{
+  position: relative;
+  left:10px;
+  top:10px;
 }
 
 table, th, td {
@@ -44,7 +52,7 @@ th{
   color: #f7f4f6;  
   font-family:Segeo UI; 
   font-size: 30px;
-  background-color: #F737B0;
+  background-color: #BF11DD;
 }
 
 td {
@@ -54,7 +62,7 @@ td {
 }
 
 tr{
-  color: #db3aa0;  
+  color: #BF11DD;  
   font-family:Segeo UI; 
   font-size: 30px;
 }
@@ -119,7 +127,7 @@ input[type=submit] {
  }
 
  .column{
-  color: #F737B0;  
+  color: #BF11DD;  
   font-family:Segeo UI; 
   font-size: 30px;
  }
