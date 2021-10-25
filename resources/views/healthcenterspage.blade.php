@@ -8,7 +8,6 @@
        
     </head>
     <body>
-    <!-- <section id="section1" class="parallax" data-stellar-background-ratio="0.5"> -->
       <div class="container">
 				<div class="caption text-center text-white" data-stellar-ratio="0.7">    
           <div class="logo">
@@ -28,53 +27,53 @@
               <a class="nav-link" href="http://127.0.0.1:8000/#section4">Contact</a>
             </li> 
           </ul>
-<div >
-  <div class="top">
-    <h1>Pet Care Centers</h1>
-  </div>
-  <br>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Vaterinary Devision</th>
-        <th>Contact Number</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Colombo</td>
-        <td>0712545789</td>
-      </tr>
-      <tr>
-        <td>Homagama</td>
-        <td>0712545789</td>
-      </tr>
-      <tr>
-        <td>Kaduwela</td>
-        <td>0712545789</td>
-      </tr>
-      <tr>
-        <td>Kesbawa</td>
-        <td>0712545789</td>
-      </tr>
-      <tr>
-        <td>Kolonnawa</td>
-        <td>0712545789</td>
-      </tr>
-      <tr>
-        <td>Kosgama</td>
-        <td>0712545789</td>
-      </tr>
-      <tr>
-        <td>Padukka</td>
-        <td>0712545789</td>
-      </tr>
-      <tr>
-        <td>Moratuwa</td>
-        <td>0712545789</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</body>
+          <div >
+            <div class="top">
+              <h1>Pet Care Centers</h1>
+            </div>
+            <br>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Vaterinary Devision</th>
+                  <th>Contact Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Colombo</td>
+                  <td>0712545789</td>
+                </tr>
+                <tr>
+                  <td>Homagama</td>
+                  <td>0712545789</td>
+                </tr>
+                <tr>
+                  <td>Kaduwela</td>
+                  <td>0712545789</td>
+                </tr>
+                <tr>
+                  <td>Kesbawa</td>
+                  <td>0712545789</td>
+                </tr>
+                <tr>
+                  <td>Kolonnawa</td>
+                  <td>0712545789</td>
+                </tr>
+                <tr>
+                  <td>Kosgama</td>
+                  <td>0712545789</td>
+                </tr>
+                <tr>
+                  <td>Padukka</td>
+                  <td>0712545789</td>
+                </tr>
+                <tr>
+                  <td>Moratuwa</td>
+                  <td>0712545789</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </body>
 </html>
