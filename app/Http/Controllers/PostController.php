@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
-namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Models\Animal;
@@ -81,11 +80,11 @@ class PostController extends Controller
 
 
     }
-    public  function addPostById(Request $request){
-        $posts = Post::all();
-        $user = User::find($request->input('id'));
-        
-        return view('addnewpost', compact('posts','user'));  
+    public  function addPostById(){
+
+        $post = Post::where('user_id','=', Auth::user()->id)->get();
+        //dd($post);
+        return view('addnewpost', ['posts'=>$post]);  
     }
 
     
