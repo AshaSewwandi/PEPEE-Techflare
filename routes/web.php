@@ -28,6 +28,10 @@ Route::get('/petcarepage', function () {
     return view('healthcenterspage');
 });
 
+Route::get('/add', function () {
+    return view('addnewpost');
+});
+
 Route::get('/Addpost/{id}',[App\Http\Controllers\PostController::class,'Addpost']);
 Route::post('/StorePost',[App\Http\Controllers\PostController::class,'StorePost']);
 Route::get('/StoreUser',[App\Http\Controllers\UserController::class,'StoreUser']);
@@ -57,3 +61,6 @@ Route::get('/editprofile/{id}', [App\Http\Controllers\UserController::class,'edi
 Route::post('/updateprofile', [App\Http\Controllers\UserController::class,'update']);
 Route::get('/close', [App\Http\Controllers\UserController::class,'index']);
 //Route::post('/updateprofile', [App\Http\Controllers\UserController::class,'create']);
+
+Route::get('/add', [App\Http\Controllers\PostController::class,'addPostById']);
+

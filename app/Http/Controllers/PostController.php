@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Auth;
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
@@ -80,6 +80,12 @@ class PostController extends Controller
         return view('home')->with('posts',$post);
 
 
+    }
+    public  function addPostById(Request $request){
+        $posts = Post::all();
+        $user = User::find($request->input('id'));
+        
+        return view('addnewpost', compact('posts','user'));  
     }
 
     
