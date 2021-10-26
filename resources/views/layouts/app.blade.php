@@ -42,9 +42,7 @@
         a.navbar-brand{
             color:#ffffff;
             font-family:Segeo UI;  
-        }
-        
-        
+        } 
     </style>
 </head>
 <body>

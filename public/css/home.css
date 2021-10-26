@@ -15,22 +15,22 @@ body{
   color:#BF11DD;
   font-family:Segeo UI;
 }
-.card {
-  position:absolute;
-  top:-75px;
-  left: 1000px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 400px;
-  margin: auto;
-  text-align: center;
-  font-family: Segeo UI;
-  background-color: #ffffff;
-  padding: 70px 65px;
+ .card {
+   
+  position: fixed;
+   bottom:0px;
+   left: 1205px;
+   max-width: 330px;
+   margin: auto;
+   text-align: center;
+   font-family: Segeo UI;
+   background-color: #ffffff;
+   padding: 52px 20px;
+} 
+.panel.panel-white.post.panel-shadow{
+  max-width: 350px;
+  position:relative;
 }
-.pull-left.container1 {
-  padding: 160px 50px;
-  position:absolute;
-  }
   .title {
     color: grey;
     font-size: 18px;
@@ -96,12 +96,12 @@ body{
     width: 100%;
     height: 10vw;
     }
-    .material-icons{
-      color:#BF11DD;
-      position: absolute;
-      right:20px;
-      top: 10px;
-    }
+.material-icons{
+  color:#BF11DD;
+  position: relative;
+  right:20px;
+  top: 10px;
+}
     /* post */                       
 .post .post-heading {
   border-radius:25px 25px  0px 0px;

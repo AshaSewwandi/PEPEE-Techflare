@@ -75,6 +75,8 @@ class RegisterController extends Controller
             'mobileNo' => $data['mobileNo'],
             'password' => Hash::make($data['password']),
         ]);
+
+        return redirect("/home");
          
     }
 
