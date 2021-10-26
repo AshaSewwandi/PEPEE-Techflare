@@ -44,9 +44,6 @@
                                 </div>
 
                                 <div class="post-image">
-                                    <!-- <img src="/img/cat1.jpg" class="image" alt="image post">  -->
-                                    <input type="hidden" name="id" value="{{ Auth::user()->id }}" > 
-                                    <input type="hidden" name="user_id" value="{{ $post->user_id }}" > 
                                     <img src=" {{ asset ('storage/images/posts/' . $post->image) }}" alt="Card image" class="image" >                                                                                       
                                 </div>
                                 <div class=" post-description">
@@ -58,5 +55,5 @@
             </div>
         </div>
     </div>
-</section>
+
 @endsection

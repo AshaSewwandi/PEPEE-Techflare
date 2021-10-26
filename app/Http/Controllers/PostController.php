@@ -10,9 +10,6 @@ use App\Models\Post;
 
 class PostController extends Controller
 {
-    // public function Addpost(){
-    //     return view('Addpost');  
-    // }
 
     public function viewpost(){
         return view('viewpost');  
@@ -55,14 +52,14 @@ class PostController extends Controller
 
         $post->save();
 
-        $animal=new Animal;
-        $animal->animal_id=$request->animal_id;
-        $animal->type=$request->type;
-        $animal->age=$request->age;
-        $animal->location=$request->location;
-        $animal->vaccination=$request->vaccination;
-        $animal->sex=$request->sex;
-        $animal->post_id=$post->post_id;
+        $animals=new Animal;
+        $animals->animal_id=$request->animal_id;
+        $animals->type=$request->type;
+        $animals->age=$request->age;
+        $animals->location=$request->location;
+        $animals->vaccination=$request->vaccination;
+        $animals->sex=$request->sex;
+        $animals->post_id=$post->post_id;
 
         if($request->hasFile('image')){
             $destination_path = 'public/images/posts';
@@ -70,15 +67,10 @@ class PostController extends Controller
             $image_name = $image->getClientOriginalName();
             $path = $request->file('image')->storeAs($destination_path, $image_name);
 
-            $animal['image'] = $image_name;
+            $animals['image'] = $image_name;
         }
-        $animal->save();
-        $post = Post::all();
-
-       //return back()->with('success','Post add successfully');
-        return view('home')->with('posts',$post);
-
-
+        $animals->save();
+        return redirect("/home");
     }
     public  function addPostById(){
 
