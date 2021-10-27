@@ -120,9 +120,12 @@ body{
   max-width: 100%;
   max-height: 100px;
   }
+  .post .post-image{
+    background-color: #ffffff;
+  }
   .post .post-description {
   padding: 15px;
-  background-color:#ffffff;
+  background-color:#F778A1;
   border-radius:0px 0px  25px 25px;
   } 
   /* link-styles */
@@ -243,10 +246,37 @@ img.img-circle.avatar{
   font-family:Segeo UI;
   border: 2px solid #ffffff;
 }
+/* ///////////// */
 .row{
   height: 40%;
   padding: 5px;
+  display: block;
+  float: left;
+  width:auto;
 }
+/* * {
+  box-sizing: border-box;
+} */
+ /* .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+ /* .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+} */
+
+.hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  color: #BF11DD;
+}
+/* ///////////// */
 .dropdown {
   position: absolute;
   display: inline-block;
@@ -269,3 +299,5 @@ img.img-circle.avatar{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* ///////////// */
