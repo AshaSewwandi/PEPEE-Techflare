@@ -16,10 +16,9 @@ body{
   font-family:Segeo UI;
 }
  .card {
-   
   position: fixed;
    bottom:0px;
-   left: 1205px;
+   left: 1274px;
    max-width: 330px;
    margin: auto;
    text-align: center;
@@ -28,7 +27,7 @@ body{
    padding: 52px 20px;
 } 
 .panel.panel-white.post.panel-shadow{
-  max-width: 350px;
+  max-width: 200px;
   position:relative;
 }
   .title {
@@ -42,7 +41,7 @@ body{
     color:#F737B0;
     font-size: 28px;
     }
-    h4{
+    h6{
     position:relative;
     left:50px;
     }
@@ -116,8 +115,10 @@ body{
   margin-right: 15px;
   }
   .post .post-image .image {
-  width: 100%;
-  height: auto;
+  /* width: 100%; */
+  /* height: auto; */
+  max-width: 100%;
+  max-height: 100px;
   }
   .post .post-description {
   padding: 15px;
@@ -242,5 +243,29 @@ img.img-circle.avatar{
   font-family:Segeo UI;
   border: 2px solid #ffffff;
 }
+.row{
+  height: 40%;
+  padding: 5px;
+}
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #BF11DD;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd}
 
-
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -3,11 +3,8 @@
 
 <div class="container">
     <div class="caption text-center text-white" data-stellar-ratio="0.7">
-        <section>
-            <div class="container bootstrap snippets bootdey">
-                <div class="col-md-8">
                     <div class="row">
-                        <div class="column">
+                        <div class="col">   
                             @foreach($posts as $post)
                                 <div class="panel panel-white post panel-shadow">
                                     <div class="post-heading">
@@ -16,24 +13,28 @@
                                                 <img src=" {{ asset ('storage/images/users/' . Auth::user()->image) }}" alt="user profile image" class="img-circle avatar" >
                                             @else
                                                 <img src="/img/profile.png" alt="user profile image" class="img-circle avatar">
-                                            @endif   
+                                            @endif 
+                                        </div>
+                                        <div class="dropdown">
+                                            <i class="material-icons"style="font-size:48px">&#xe5d3;</i>
+                                            
+                                            <div class="dropdown-content">
+                                                <a href="/deletepost/{{$post->post_id}}">Delete Post</a>
+                                                <a href="/editpost/{{$post->post_id}}">Edit Post</a>  
+                                            </div>
                                         </div>
                                     </div>
-
                                     <div class="post-image">
-                                        <img src=" {{ asset ('storage/images/posts/' . $post->image) }}" alt="Card image" class="image" >                                                                                       
+                                        <img src=" {{ asset ('storage/images/posts/' . $post->image) }}" alt="Card image" class="image">                                                                                       
                                     </div>
 
                                     <div class=" post-description">
-                                        <h4><a href="#">View Post</a></h4>
+                                        <h6><a href="#">See More</a></h6>
                                     </div>          
                                 </div>   
                             @endforeach 
-                        </div>      
+                            </div> 
                     </div>
-                </div>
-            </div>
-        </section> 
             <div class="card pull left">
                 <div class="card-head">
                     @if(Auth::user()->image)
@@ -47,7 +48,7 @@
                 <div class="card-body">
                     <p>Name : <br>{{Auth::user()->name }}</p>
 
-                    <p>Email : {{ Auth::user()->email }} </p>
+                    <p>Email :<br> {{ Auth::user()->email }} </p>
 
                     <p>Contact :<br>{{ Auth::user()->mobileNo }} </p>
                                     

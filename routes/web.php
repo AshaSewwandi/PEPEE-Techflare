@@ -39,6 +39,9 @@ Route::get('/viewpost',[App\Http\Controllers\PostController::class,'viewpost']);
 Route::get('/showpost',[App\Http\Controllers\PostController::class,'showpost']);
 Route::get('/show/{id}',[App\Http\Controllers\PostController::class,'show']);
 Route::get('/show/{id}',[App\Http\Controllers\HomeController::class,'show']);
+Route::get('/deletepost/{post_id}', [App\Http\Controllers\PostController::class, 'delete']);
+Route::get('/editpost/{post_id}', [App\Http\Controllers\PostController::class,'edit']);
+Route::post('/updatePost',[App\Http\Controllers\PostController::class,'updatePost']);
 
 Auth::routes();
 

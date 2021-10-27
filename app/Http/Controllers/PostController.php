@@ -79,5 +79,66 @@ class PostController extends Controller
         return view('addnewpost', ['posts'=>$post]);  
     }
 
+    public function delete($post_id)
+    {
+        $posts = Post::find($post_id) ;
+        $posts->delete();
+
+        return redirect()->back();
+    }
+
+    public function edit($post_id)
+    {
+        
+        $posts = Post::find($post_id) ;
+        //$posts = Post::all();
+        $animals = Animal::all();
+
+        return view('editpost', compact('posts','animals'));
+        //return view('editpost')->with('posts',$posts);
+        
+    }
+
+    public function updatePost(Request $request){
+        $image=$request->image;
+        $description=$request->description;
+        $location=$request->location;
+        $age=$request->age;
+        $vaccination=$request->vaccination;
+
+        $post =Post::find($post_id);
+
+        $post->description=$description;
+        $post->location=$location;
+
+        if($request->hasFile('image')){
+            $destination_path = 'public/images/posts';
+            $image = $request->file('image');
+            $image_name = $image->getClientOriginalName();
+            $path = $request->file('image')->storeAs($destination_path, $image_name);
+
+            $post['image'] = $image_name;
+        }
+
+        $post->save();
+
+        $animal =Animal::find($animal_id);
+        $animal->age=$age;
+        $animal->vaccination=$vaccination;
+
+        if($request->hasFile('image')){
+            $destination_path = 'public/images/posts';
+            $image = $request->file('image');
+            $image_name = $image->getClientOriginalName();
+            $path = $request->file('image')->storeAs($destination_path, $image_name);
+
+            $animal['image'] = $image_name;
+        }
+
+        $animal->save();
+
+        return redirect('/home');
+    }
+
     
 }
