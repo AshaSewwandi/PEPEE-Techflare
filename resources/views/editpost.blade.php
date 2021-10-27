@@ -1,7 +1,7 @@
 <html>
     <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> 
-    <link href="/css/addpost.css" rel="stylesheet">
+    <link href="/css/editpost.css" rel="stylesheet">
     </head>
     <body>
     @if ($message = Session::get('success'))
@@ -28,18 +28,17 @@
                 <form action="/updatePost" method="post" enctype="multipart/form-data">
                     @csrf
                     <input type="hidden" name="post_id" value="{{$posts->post_id}}" readonly>
-                    <input type="hidden" name="animal_id" value="{{$animals->animal_id}}" readonly>
                         
                         <div class="form-group row">
                             <label for="image" class="col-sm-3 col-form-label">Upload Image:</label>
                             <div class="col-sm-6">
-                                <input type="file" name="image" value="{{$posts->image}}">
+                                <input type="file" name="image">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="description" class="col-sm-3 col-form-label">Write a caption:</label>
                             <div class="col-sm-9">
-                                <textarea rows="4" cols="50" name="description" value="{{$posts->description}}"></textarea>
+                                <textarea rows="4" cols="50" name="description" >{{$posts->description}}</textarea>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -51,7 +50,7 @@
                         <div class="form-group row">
                             <label for="age" class="col-sm-3 col-form-label">Age:</label>
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" name="age">
+                                <input type="text" class="form-control" name="age" value="{{$animals->age}}">
                             </div>
                         </div>
                            
