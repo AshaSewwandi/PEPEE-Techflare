@@ -87,23 +87,32 @@ class PostController extends Controller
         return redirect()->back();
     }
 
-    public function edit($post_id, Animal $animal_id)
+    public function edit($post_id)
     {
-        $posts = Post::find($post_id) ;
+        $posts = Post::find($post_id);
         //$posts = Post::all();
-        $animals = Animal::find($animal_id);
+        $posts = DB::table('posts')
+            ->join('animals', 'posts.post_id', '=', 'animals.post_id')
+            ->where('animals.post_id','=', $post_id)
+            ->select('animals.*', 'posts.*')
+            ->first();
 
-        return view('editpost', compact('posts','animals'));
+            //dd($posts);
+
+        return view('editpost', compact('posts'));
         //return view('editpost')->with('posts',$posts);
         
     }
 
-    public function updatePost(Request $request){
-        $image=$request->image;
-        $description=$request->description;
-        $location=$request->location;
-        $age=$request->age;
-        $vaccination=$request->vaccination;
+    public function updatePost(Request $request, Post $post){
+
+        $data = Post::find($request->input('post_id'));
+        $data->post_id=$request->input('post_id');
+        $data->image=$request->image;
+        $data->description=$request->description;
+        $data->location=$request->location;
+        $data->age=$request->age;
+        $data->vaccination=$request->vaccination;
 
         $post =Post::find($post_id);
 

@@ -50,7 +50,7 @@
                         <div class="form-group row">
                             <label for="age" class="col-sm-3 col-form-label">Age:</label>
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" name="age" value="{{$animals->age}}">
+                                <input type="text" class="form-control" name="age" value="{{$posts->age}}">
                             </div>
                         </div>
                            
