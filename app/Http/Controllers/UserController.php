@@ -103,9 +103,11 @@ class UserController extends Controller
 
         $data->save();
 
-        $datas = User::all();
+        $users = User::all();
+        $posts = Post::all();
 
-        return view('home')->with('users',$datas);
+        return view('home', compact('users','posts'));
+
     }
 
     /**

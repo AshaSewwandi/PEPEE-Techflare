@@ -54,7 +54,7 @@
                
             <br>                           
             <div class="row">
-            <button onclick="location.href='/close'" type="button" class="btn btn-primary-5" >Close</button>
+            <button onclick="location.href='/home'" type="button" class="btn btn-primary-5" >Close</button>
             <button type="submit" class="btn btn-primary-6" value="update" >Save changes</button>
             </div> 
                       
