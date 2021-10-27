@@ -106,7 +106,9 @@ class UserController extends Controller
         $users = User::all();
         $posts = Post::all();
 
-        return view('home', compact('users','posts'));
+        return redirect('/home');
+
+        // return view('home', compact('users','posts'));
 
     }
 
