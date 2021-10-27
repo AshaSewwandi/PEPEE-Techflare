@@ -108,16 +108,12 @@ class PostController extends Controller
 
         $data = Post::find($request->input('post_id'));
         $data->post_id=$request->input('post_id');
-        $data->image=$request->image;
+        //$data->animal_id=$request->input('animal_id');
+        $data->image = $request->image;
         $data->description=$request->description;
         $data->location=$request->location;
-        $data->age=$request->age;
-        $data->vaccination=$request->vaccination;
+        
 
-        $post =Post::find($post_id);
-
-        $post->description=$description;
-        $post->location=$location;
 
         if($request->hasFile('image')){
             $destination_path = 'public/images/posts';
@@ -125,14 +121,15 @@ class PostController extends Controller
             $image_name = $image->getClientOriginalName();
             $path = $request->file('image')->storeAs($destination_path, $image_name);
 
-            $post['image'] = $image_name;
+            $data['image'] = $image_name;
         }
 
-        $post->save();
-
-        $animal =Animal::find($animal_id);
-        $animal->age=$age;
-        $animal->vaccination=$vaccination;
+        $animal = Animal::find($request->input('animal_id'));
+        //$animal = $request->all();
+        $animal->age=$request->age;
+        $animal->vaccination=$request->vaccination;
+        // $animal->age=$age;
+        // $animal->vaccination=$vaccination;
 
         if($request->hasFile('image')){
             $destination_path = 'public/images/posts';
@@ -144,6 +141,7 @@ class PostController extends Controller
         }
 
         $animal->save();
+        $data->save();
 
         return redirect('/home');
     }

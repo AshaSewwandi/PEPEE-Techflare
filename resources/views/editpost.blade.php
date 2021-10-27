@@ -28,11 +28,13 @@
                 <form action="/updatePost" method="post" enctype="multipart/form-data">
                     @csrf
                     <input type="hidden" name="post_id" value="{{$posts->post_id}}" readonly>
+                    <input type="hidden" name="animal_id" value="{{$posts->animal_id}}" readonly>
                         
                         <div class="form-group row">
                             <label for="image" class="col-sm-3 col-form-label">Upload Image:</label>
                             <div class="col-sm-6">
-                                <input type="file" name="image">
+                            <input type="file" name="image" placeholder="image" value="{{$posts->image}}">
+                            <img src="/storage/images/posts/{{ $posts->image}}" alt="" class="image" width="50px">
                             </div>
                         </div>
                         <div class="form-group row">
