@@ -87,12 +87,11 @@ class PostController extends Controller
         return redirect()->back();
     }
 
-    public function edit($post_id)
+    public function edit($post_id, Animal $animal_id)
     {
-        
         $posts = Post::find($post_id) ;
         //$posts = Post::all();
-        $animals = Animal::all();
+        $animals = Animal::find($animal_id);
 
         return view('editpost', compact('posts','animals'));
         //return view('editpost')->with('posts',$posts);
