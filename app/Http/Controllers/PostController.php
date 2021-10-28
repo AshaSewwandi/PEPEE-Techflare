@@ -39,6 +39,7 @@ class PostController extends Controller
         $post->post_id=$request->post_id;
         $post->description=$request->description;
         $post->location=$request->location;
+        $post->District=$request->District;
         $post->user_id=$request->user_id;
 
         if($request->hasFile('image')){

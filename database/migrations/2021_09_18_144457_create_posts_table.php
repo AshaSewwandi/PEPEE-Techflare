@@ -17,6 +17,7 @@ class CreatePostsTable extends Migration
             $table->bigIncrements('post_id');
             $table->string('description');
             $table->mediumText('image');
+            $table->string('District');
             $table->string('location');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users'); 

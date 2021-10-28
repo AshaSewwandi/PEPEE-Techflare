@@ -33,8 +33,10 @@
                             <div class="col-sm-6">
                             <select name="type" class="custom-select" required>
                                 <option value=""  selected >Select the type</option>
-                                <option value="Dog">Dog</option>
-                                <option value="Cat">Cat</option>
+                                <option value="Dog">Puppy</option>
+                                <option value="Cat">Dog</option>
+                                <option value="Dog">Kitten </option>
+                                <option value="Cat">Adult Cat</option>
                             </select>
                             </div>
                         </div>
@@ -54,6 +56,12 @@
                             <label for="location" class="col-sm-3 col-form-label">Location:</label>
                             <div class="col-sm-6">
                                 <input type="text" class="form-control" name="location" >
+                            </div>   
+                        </div>
+                        <div class="form-group row">
+                            <label for="District" class="col-sm-3 col-form-label">District:</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="District" >
                             </div>   
                         </div>
                         <div class="form-group row">
@@ -77,8 +85,8 @@
                         </div>    
                         <div class="form-group row">                        
                             <label class="container">Vaccinated:
-                                <input type="checkbox" name="vaccination" value="Yes">
-                                <span class="checkmark"></span>
+                                <input type="hidden" name="vaccination" value="No">
+                                <input type="checkbox" name="vaccination" id="vaccination" value="Yes" />
                             </label>
                          </div>
                         <button type="submit" class="btn btn-primary-1" value="Submit" >Add Post</button>

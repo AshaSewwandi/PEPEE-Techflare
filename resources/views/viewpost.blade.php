@@ -14,31 +14,49 @@
                 </div> 
                 <br><br> 
                 <div class="col-sm-6">
-                    <h4>Sort result by:</h4>
-                    <select name="type" class="custom-select" required>
-                        <option value=""  selected >Select the type</option>
-                        <option value="Dog">xxxxx</option>
-                        <option value="Cat">xxxxx</option>
-                    </select>
-                </div>      
-                <br><br>  
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label><strong><h5>Sort result by:</strong></h5></label>
+                            <select id='status' class="form-control" onchange="location = this.value;" style="width: 200px">
+                                <option value="">---Select---</option>
+                                <option value="http://127.0.0.1:8000/Viewpost">Newest to Oldest</option>
+                                <option value="http://127.0.0.1:8000/viewpost">Oldest to Newest</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>          
                 <div class="col-sm-6">
-                    <h4>Filter result by location:</h4>
-                    <select name="type" class="custom-select" required>
-                        <option value=""  selected >Select the type</option>
-                        <option value="Dog">xxxxx</option>
-                        <option value="Cat">xxxxx</option>
-                    </select>
-                </div> 
-                <br><br>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label><strong><h5>Filter result by Location:</strong></h5></label>
+                            <select id='type' class="form-control" style="width: 200px">
+                                <option value="">---Select District---</option>
+                                <option value="Colombo">Colombo</option>
+                                <option value="Kaluthara">Kaluthara</option>
+                                <option value="Gampaha">Gampaha</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-sm-6">
-                    <h4>Filter result by type:</h4>
-                    <select name="type" class="custom-select" required>
-                        <option value=""  selected >Select the type</option>
-                        <option value="Dog">xxxxx</option>
-                        <option value="Cat">xxxxx</option>
-                    </select>
-                </div>       
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label><strong><h5>Filter result by Type:</strong></h5></label>
+                            <select id='type' class="form-control" style="width: 200px">
+                                <option value="">---Select Type---</option>
+                                <option value="Dog">Puppy</option>
+                                <option value="Cat">Dog</option>
+                                <option value="Dog">Kitten </option>
+                                <option value="Cat">Adult Cat</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br><br> 
+                <div class="col-sm-6">
+                    <button type="submit" class="btn btn-primary-1" value="Submit" >Apply</button>   
+                </div>  
             </div>
             <div class="split right">               
                 <div class="right">
@@ -70,7 +88,7 @@
                         <br>
                         <div class="card flex-row flex-wrap" >
                             <div class="card-header border-0">
-                                <img src=" {{ asset ('storage/images/posts/' . $animal->image) }}" width=150px height=150px>
+                                <img src="{{ asset('uploads/post/') }}" width=150px height=150px>
                             </div>
                             <div class="card-block px-2">
                                 <h4 class="card-title">Type: {{$animal->type}}</h4>
@@ -83,12 +101,11 @@
                             <div class="w-100"></div>
                         </div>
                     @endforeach
+
             </div>
            
         </body>
-      
-        
-  
+
 </html>
 
 

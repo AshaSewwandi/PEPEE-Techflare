@@ -57,7 +57,8 @@ Route::get('/AddMessage', [App\Http\Controllers\MessageController::class,'AddMes
 
 Route::get('/StoreMessage', [App\Http\Controllers\MessageController::class,'StoreMessage']);
 
-Route::get('/viewpost',[App\Http\Controllers\AnimalController::class,'viewpost']);
+Route::get('/Viewpost',[App\Http\Controllers\AnimalController::class,'viewLatestpost']);
+Route::get('/viewpost',[App\Http\Controllers\AnimalController::class,'viewOldestpost']);
 
 // edit profile
 Route::get('/editprofile/{id}', [App\Http\Controllers\UserController::class,'edit']);
