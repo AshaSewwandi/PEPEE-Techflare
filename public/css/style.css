@@ -39,7 +39,8 @@ html{
     color:  #F737B0;
     font-size: 70px;
     position: absolute;
-    right: 500px;
+    padding-left: 51%;
+    right: 350px;
     top: 1000px;
     text-decoration: underline;
     text-underline-offset: 10px;
@@ -243,6 +244,7 @@ html{
     right:60px;
     width:800px; 
     height:400px; 
+    padding-left: 10%;
     background-color:none;
     color: #F737B0;
     font-size: 25px;
