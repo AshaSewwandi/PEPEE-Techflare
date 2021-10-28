@@ -53,6 +53,4 @@ class AnimalController extends Controller
 
        return view('viewpost',compact('animals','post','users'));
     }
-
-
 }

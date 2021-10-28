@@ -66,5 +66,5 @@ Route::post('/updateprofile', [App\Http\Controllers\UserController::class,'updat
 Route::get('/close', [App\Http\Controllers\UserController::class,'index']);
 //Route::post('/updateprofile', [App\Http\Controllers\UserController::class,'create']);
 
-Route::get('/add', [App\Http\Controllers\PostController::class,'addPostById']);
+//Route::get('/add', [App\Http\Controllers\PostController::class,'addPostById']);
 
