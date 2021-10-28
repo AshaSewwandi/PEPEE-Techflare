@@ -22,7 +22,7 @@ class CreateAnimalsTable extends Migration
             $table->mediumText('image')->nullable();
             $table->string('sex')->nullable();
             $table->unsignedBigInteger('post_id');
-            $table->foreign('post_id')->references('post_id')->on('posts');
+            $table->foreign('post_id')->references('post_id')->on('posts')->onDelete('cascade');;
             $table->timestamps();
             $table->softDeletes();
         });

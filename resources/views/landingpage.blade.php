@@ -84,7 +84,7 @@
       <div class="container">
         <div class="caption text-center text-white" data-stellar-ratio="0.7">       
           <div class="item7">
-            <h1>Get in Touch </h1>
+            <h1>Leave a Comment</h1>
           </div>
           <div class="form-group">
             <form action="/StoreMessage">
@@ -143,7 +143,7 @@
                 Useful links
               </h6>
               <p>
-                <a href="http://127.0.0.1:8000/#section4" class="text-reset">Get in Touch</a>
+                <a href="http://127.0.0.1:8000/#section4" class="text-reset">Leave a Comment</a>
               </p>
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">

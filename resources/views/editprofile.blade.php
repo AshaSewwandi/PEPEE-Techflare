@@ -17,6 +17,8 @@
                 </div>
                 <div class="col-75">
                     <input type="file" name="image" value="{{$users->image}}">
+                    <br>
+                    <img src="/storage/images/users/{{ $users->image}}" alt="" class="image" width="50px">
                 </div>
             </div>
             <div class="row">
