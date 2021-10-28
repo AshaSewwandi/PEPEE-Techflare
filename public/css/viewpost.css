@@ -1,44 +1,127 @@
 html{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  }
+  body{
+    background-image: url('/img/back11.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    overflow-x: hidden;
     }
-    body{
-      background-image: url('/img/back11.jpeg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      background-size: 100% 100%;
-      overflow-x: hidden;
-      }
-    .logo{
-      position: absolute;
-      top: 8px;
-      left: 16px;
-    }
-    .nav.justify-content-end li a{
-      color: #F737B0;  
-      font-family:Segeo UI; 
-      font-size: 25px;
-    }
-    .card.flex-row.flex-wrap{
-        left: 500px;
-        height: 200px;
-        width: 1000px;
-    }
-    .split {
-      height: 100%;
-      width: 50%;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      overflow-x: hidden;
-      padding-top: 20px;
-    } 
-    .left {
-      left: 0;
-      width: 20%;
-      background-color: #ffffff;
-    }
-    .right {
-      right: 0;
-    }
+  .logo{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  .nav.justify-content-end li a{
+    color: #BF11DD;  
+    font-family:Segeo UI; 
+    font-size: 25px;
+  }
+  .card.flex-row.flex-wrap{
+      left: 500px;
+      height: 200px;
+      width: 1000px;
+  }
+  .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  } 
+  .left {
+    left: 0;
+    width: 20%;
+    background-color: #ffffff;
+  }
+  .right {
+    right: 0;
+  }
+  .custom-select{
+  left: 100;
+  color: #BF11DD;
+}
+.col-sm-6{
+  color: #BF11DD;
+  margin: 20px;
   
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+.dropdown:hover{
+  cursor:pointer;
+}
+.dropdown > a, .dropdown > button {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 6px 20px 6px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+.dropdown > a:before, .dropdown > button:before {
+  position: absolute;
+  right: 7px;
+  top: 12px;
+  content: ' ';
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+.dropdown input[type=checkbox] {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  opacity: 0;
+}
+.dropdown input[type=checkbox]:checked {
+  position: fixed;
+  z-index:+0;
+  top: 0px; left: 0px; 
+  right: 0px; bottom: 0px;
+}
+.dropdown ul {
+  position: absolute;
+  top: 18px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  left: 0px;
+  list-style: none;
+  padding: 4px 0px;
+  display: none;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,.175);
+}
+.dropdown input[type=checkbox]:checked + ul {
+  display: block;
+}
+.form-control{
+  color: #F737B0;
+}
+.btn.btn-primary-1{
+  background-color: #BF11DD;
+  border-radius: 20px;
+  color:#ffffff;
+  border: none;
+  padding:6px 35px;
+  position: relative;
+  font-size: 20px;
+  border: 2px solid F737B0;
+  left: 50px;
+  }
+

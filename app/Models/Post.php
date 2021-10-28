@@ -4,14 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 {
-    use HasFactory,SoftDeletes;
+    use HasFactory;
 
     protected $table = 'posts';
-    protected $fillable = [ 'post_id', 'description', 'image', 'location', 'message', 'id',];
+    protected $fillable = [ 'post_id', 'description', 'image', 'District','location', 'message', 'id',];
 
     protected $primaryKey = 'post_id';
 
