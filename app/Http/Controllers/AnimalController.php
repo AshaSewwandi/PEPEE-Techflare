@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Models\Animal;
 use App\Models\Post;
+use App\Models\User;
 
 class AnimalController extends Controller
 {
@@ -39,16 +40,18 @@ class AnimalController extends Controller
     {
        $animals = Animal::latest()->paginate();
        $post = Post::latest()->paginate();
+       $users = User::all();
     
-       return view('viewpost',compact('animals','post'));
+       return view('viewpost',compact('animals','post','users'));
     }
 
     public function viewOldestpost()
     {
         $animals = Animal::oldest()->paginate();
         $post = Post::oldest()->paginate();
-    
-       return view('viewpost',compact('animals','post'));
+        $users = User::all();
+
+       return view('viewpost',compact('animals','post','users'));
     }
 
 

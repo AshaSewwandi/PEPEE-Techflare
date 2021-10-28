@@ -85,21 +85,27 @@
             <div class="col-sm-4">
                 <br><br><br>
                     @foreach ($animals as $animal)
+                    @foreach($users as $user)
                         <br>
                         <div class="card flex-row flex-wrap" >
                             <div class="card-header border-0">
-                                <img src="{{ asset('uploads/post/') }}" width=150px height=150px>
+                                <img src=" {{ asset ('storage/images/posts/' . $animal->image) }}" width=150px height=150px>
                             </div>
                             <div class="card-block px-2">
+                                <br>
                                 <h4 class="card-title">Type: {{$animal->type}}</h4>
-                                <h6 class="card-text">{{optional($animal->post)->description}}</h6>
+                                <br><br>
+                                <!-- <h6 class="card-text">{{optional($animal->post)->description}}</h6>
                                 <br>
                                 <h5 class="card-title">Age: {{$animal->age}}</h5>
-                                <h5 class="card-title">Gender: {{$animal->sex}}</h5>   
-                                <h5 class="card-title">Location: {{$animal->location}}</h5>          
+                                <h5 class="card-title">Gender: {{$animal->sex}}</h5>    -->
+                                <h5 class="card-title">Location: {{$animal->location}}</h5>     
+                                <h5 class="card-title-3">Contact Details: {{$user->mobileNo}}</h5>      
                             </div>
                             <div class="w-100"></div>
                         </div>
+                        @break
+                        @endforeach
                     @endforeach
 
             </div>
