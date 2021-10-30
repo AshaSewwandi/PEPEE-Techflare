@@ -42,7 +42,7 @@
             <img src="/img/img001.png" alt="" width="100" height="100">
           </div>
           <div class="text-right">
-            <a href="/viewpost" class="btn btn-primary-1">Adopt</a>
+            <a href="/Viewpost" class="btn btn-primary-1">Adopt</a>
             <a  href="/login" class="btn btn-primary-2"> Find Shelter</a>
           </div>
         </div>

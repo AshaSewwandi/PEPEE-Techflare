@@ -57,8 +57,12 @@ Route::get('/AddMessage', [App\Http\Controllers\MessageController::class,'AddMes
 
 Route::get('/StoreMessage', [App\Http\Controllers\MessageController::class,'StoreMessage']);
 
-Route::get('/Viewpost',[App\Http\Controllers\AnimalController::class,'viewLatestpost']);
-Route::get('/viewpost',[App\Http\Controllers\AnimalController::class,'viewOldestpost']);
+Route::get('/Viewpost',[App\Http\Controllers\PostController::class,'viewLatestpost']);
+Route::get('/viewpost',[App\Http\Controllers\PostController::class,'viewOldestpost']);
+
+Route::get('/FilterPost',[App\Http\Controllers\PostController::class,'filterByType']);
+Route::get('/filterPost',[App\Http\Controllers\PostController::class,'filterByTypes']);
+
 
 // edit profile
 Route::get('/editprofile/{id}', [App\Http\Controllers\UserController::class,'edit']);
