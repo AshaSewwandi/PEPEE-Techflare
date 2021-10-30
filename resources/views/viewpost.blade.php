@@ -43,19 +43,17 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label><strong><h5>Filter result by Type:</strong></h5></label>
-                            <select id='type' class="form-control" style="width: 200px">
+                            <select id='type' class="form-control" onchange="location = this.value;" style="width: 200px">
                                 <option value="">---Select Type---</option>
-                                <option value="Puppy">Puppy</option>
-                                <option value="Dog">Dog</option>
-                                <option value="Kitten">Kitten </option>
-                                <option value="Adult Cat">Adult Cat</option>
+                                <option value="http://127.0.0.1:8000/FilterPost">Dog</option>
+                                <option value="http://127.0.0.1:8000/filterPost">Cat</option>
                             </select>
                         </div>
                     </div>
                 </div>
                 <br><br> 
                 <div class="col-sm-6">
-                    <button type="submit" class="btn btn-primary-1" value="Submit" >Apply</button>   
+                    <button type="submit" class="btn btn-primary-1" onchange="location = this.value;" value="Submit" >Apply</button>   
                 </div>  
             </div>
             <div class="split right">               
@@ -92,11 +90,11 @@
                             </div>
                             <div class="card-block px-2">
                                 <br>
-                                <h5 class="card-text">Type:{{$post->type}} </h5>        
+                                <h5 class="card-text">Type : {{$post->type}} </h5>        
                                 <h6 class="card-title">{{$post->description}}</h6>
                                 <br>
-                                <h5 class="card-title-3">Contact Details: {{$post->mobileNo}}</h5>    
-                                <h5 class="card-title">Location: {{$post->location}}</h5>  
+                                <h5 class="card-title-3">Contact Details : {{$post->mobileNo}}</h5>    
+                                <h5 class="card-title">Location : {{$post->location}}</h5>  
                             </div>       
                             <div class="w-100"></div>
                         </div>     
