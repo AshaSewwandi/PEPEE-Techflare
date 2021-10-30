@@ -170,5 +170,31 @@ class PostController extends Controller
     }
     
 
+    public function filterByType()
+    {    
+        $posts = DB::table('posts')
+            ->join('users', 'posts.user_id', '=', 'users.id')
+            ->join('animals', 'posts.post_id', '=', 'animals.post_id')
+            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.image','animals.type','posts.created_at')
+            ->where('animals.type', '=', 'Dog')
+            ->orWhere('animals.type','Puppy')
+            ->get();
+
+        return view('Viewpost',compact('posts'));
+    }
+
+    public function filterByTypes()
+    {    
+        $posts = DB::table('posts')
+            ->join('users', 'posts.user_id', '=', 'users.id')
+            ->join('animals', 'posts.post_id', '=', 'animals.post_id')
+            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.image','animals.type','posts.created_at')
+            ->where('animals.type', '=', 'Kitten')
+            ->orWhere('animals.type','Adult Cat')
+            ->get();
+
+        return view('Viewpost',compact('posts'));
+    }
+
       
 }

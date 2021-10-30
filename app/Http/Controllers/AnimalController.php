@@ -36,5 +36,40 @@ class AnimalController extends Controller
         return back()->with('success','Post add successfully');
     }
 
+    public function filterByLocationC()
+    {    
+        $posts = DB::table('posts')
+            ->join('users', 'posts.user_id', '=', 'users.id')
+            ->join('animals', 'posts.post_id', '=', 'animals.post_id')
+            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.District', 'posts.image','animals.type','posts.created_at')
+            ->where('posts.District', '=', 'Colombo')
+            ->get();
+
+        return view('Viewpost',compact('posts'));
+    }
+
+    public function filterByLocationK()
+    {    
+        $posts = DB::table('posts')
+            ->join('users', 'posts.user_id', '=', 'users.id')
+            ->join('animals', 'posts.post_id', '=', 'animals.post_id')
+            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.District', 'posts.image','animals.type','posts.created_at')
+            ->where('posts.District', '=', 'Kaluthara')
+            ->get();
+
+        return view('Viewpost',compact('posts'));
+    }
+
+    public function filterByLocationG()
+    {    
+        $posts = DB::table('posts')
+            ->join('users', 'posts.user_id', '=', 'users.id')
+            ->join('animals', 'posts.post_id', '=', 'animals.post_id')
+            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.District', 'posts.image','animals.type','posts.created_at')
+            ->where('posts.District', '=', 'Gampaha')
+            ->get();
+
+        return view('Viewpost',compact('posts'));
+    }
     
 }

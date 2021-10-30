@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\AnimalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,6 +62,12 @@ Route::get('/Viewpost',[App\Http\Controllers\PostController::class,'viewLatestpo
 Route::get('/viewpost',[App\Http\Controllers\PostController::class,'viewOldestpost']);
 
 
+Route::get('/FilterPost',[App\Http\Controllers\PostController::class,'filterByType']);
+Route::get('/filterPost',[App\Http\Controllers\PostController::class,'filterByTypes']);
+
+Route::get('/FilterLocationC',[App\Http\Controllers\AnimalController::class,'filterByLocationC']);
+Route::get('/FilterLocationK',[App\Http\Controllers\AnimalController::class,'filterByLocationK']);
+Route::get('/FilterLocationG',[App\Http\Controllers\AnimalController::class,'filterByLocationG']);
 
 
 // edit profile

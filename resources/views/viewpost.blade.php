@@ -29,12 +29,11 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label><strong><h5>Filter result by Location:</strong></h5></label>
-                            <select id='type' class="form-control" style="width: 200px">
+                            <select id='district' class="form-control" onchange="location = this.value;" style="width: 200px">
                                 <option value="">---Select District---</option>
-                                <option value="Colombo">Colombo</option>
-                                <option value="Kaluthara">Kaluthara</option>
-                                <option value="Gampaha">Gampaha</option>
-                                <option value="Other">Other</option>
+                                <option value="http://127.0.0.1:8000/FilterLocationC">Colombo</option>
+                                <option value="http://127.0.0.1:8000/FilterLocationK">Kaluthara</option>
+                                <option value="http://127.0.0.1:8000/FilterLocationG">Gampaha</option>
                             </select>
                         </div>
                     </div>
@@ -52,9 +51,9 @@
                     </div>
                 </div>
                 <br><br> 
-                <div class="col-sm-6">
+                <!-- <div class="col-sm-6">
                     <button type="submit" class="btn btn-primary-1" onchange="location = this.value;" value="Submit" >Apply</button>   
-                </div>  
+                </div>   -->
             </div>
             <div class="split right">               
                 <div class="right">
