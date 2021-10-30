@@ -45,10 +45,10 @@
                             <label><strong><h5>Filter result by Type:</strong></h5></label>
                             <select id='type' class="form-control" style="width: 200px">
                                 <option value="">---Select Type---</option>
-                                <option value="Dog">Puppy</option>
-                                <option value="Cat">Dog</option>
-                                <option value="Dog">Kitten </option>
-                                <option value="Cat">Adult Cat</option>
+                                <option value="Puppy">Puppy</option>
+                                <option value="Dog">Dog</option>
+                                <option value="Kitten">Kitten </option>
+                                <option value="Adult Cat">Adult Cat</option>
                             </select>
                         </div>
                     </div>
@@ -83,36 +83,26 @@
                 </div>             
             </div>
             <div class="col-sm-4">
-                <br><br><br>
-                    @foreach ($animals as $animal)
-                    @foreach($users as $user)
+                <br><br><br>  
+                    @foreach($posts as $post)
                         <br>
                         <div class="card flex-row flex-wrap" >
                             <div class="card-header border-0">
-                                <img src=" {{ asset ('storage/images/posts/' . $animal->image) }}" width=200px height=150px>
+                                <img src=" {{ asset ('storage/images/posts/' . $post->image) }}" width=200px height=150px>
                             </div>
                             <div class="card-block px-2">
                                 <br>
-                                <h4 class="card-title">Type: {{$animal->type}}</h4>
-                                <br><br>
-                                <!-- <h6 class="card-text">{{optional($animal->post)->description}}</h6>
+                                <h5 class="card-text">Type:{{$post->type}} </h5>        
+                                <h6 class="card-title">{{$post->description}}</h6>
                                 <br>
-                                <h5 class="card-title">Age: {{$animal->age}}</h5>
-                                <h5 class="card-title">Gender: {{$animal->sex}}</h5>-->
-                                <h5 class="card-title">Location: {{$animal->location}}</h5>  
-                               
-                                <h5 class="card-title-3">Contact Details: {{$user->mobileNo}}</h5> 
+                                <h5 class="card-title-3">Contact Details: {{$post->mobileNo}}</h5>    
+                                <h5 class="card-title">Location: {{$post->location}}</h5>  
                             </div>       
                             <div class="w-100"></div>
-                        </div>
-                        @break
-                        @endforeach          
+                        </div>     
                     @endforeach
-
             </div>
-           
         </body>
-
 </html>
 
 

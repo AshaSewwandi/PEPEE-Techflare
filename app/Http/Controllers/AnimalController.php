@@ -36,21 +36,5 @@ class AnimalController extends Controller
         return back()->with('success','Post add successfully');
     }
 
-    public function viewLatestpost()
-    {
-       $animals = Animal::latest()->paginate();
-       $post = Post::latest()->paginate();
-       $users = User::all();
     
-       return view('viewpost',compact('animals','post','users'));
-    }
-
-    public function viewOldestpost()
-    {
-        $animals = Animal::oldest()->paginate();
-        $post = Post::oldest()->paginate();
-        $users = User::all();
-
-       return view('viewpost',compact('animals','post','users'));
-    }
 }

@@ -33,10 +33,10 @@
                             <div class="col-sm-6">
                             <select name="type" class="custom-select" required>
                                 <option value=""  selected >Select the type</option>
-                                <option value="Dog">Puppy</option>
-                                <option value="Cat">Dog</option>
-                                <option value="Dog">Kitten </option>
-                                <option value="Cat">Adult Cat</option>
+                                <option value="Puppy">Puppy</option>
+                                <option value="Dog">Dog</option>
+                                <option value="Kitten">Kitten </option>
+                                <option value="Adult Cat">Adult Cat</option>
                             </select>
                             </div>
                         </div>
