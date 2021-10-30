@@ -60,8 +60,7 @@ Route::get('/StoreMessage', [App\Http\Controllers\MessageController::class,'Stor
 Route::get('/Viewpost',[App\Http\Controllers\PostController::class,'viewLatestpost']);
 Route::get('/viewpost',[App\Http\Controllers\PostController::class,'viewOldestpost']);
 
-Route::get('/FilterPost',[App\Http\Controllers\PostController::class,'filterByType']);
-Route::get('/filterPost',[App\Http\Controllers\PostController::class,'filterByTypes']);
+
 
 
 // edit profile
