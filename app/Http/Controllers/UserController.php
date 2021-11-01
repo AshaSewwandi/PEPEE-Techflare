@@ -11,11 +11,6 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         return view('home');
@@ -26,56 +21,15 @@ class UserController extends Controller
         $user = User::find($id);
         $posts = $user->posts()->get();
     }
-    
-    public function create()
-    {
-        //
 
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    // view  edit profile view
     public function edit($id)
-    {
-        
+    { 
         $data = User::find($id) ;
-        return view('editprofile')->with('users',$data);
-        
+        return view('editprofile')->with('users',$data); 
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    // strore update  users data
     public function update(Request $request)
     {
         $id=$request->id;
@@ -107,19 +61,5 @@ class UserController extends Controller
         $posts = Post::all();
 
         return redirect('/home');
-
-        // return view('home', compact('users','posts'));
-
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
     }
 }

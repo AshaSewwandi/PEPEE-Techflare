@@ -6,6 +6,7 @@
 </head>
 <body>
     <div class="container">
+        <!-- start edit profile form -->
         <h1>Edit Profile</h1>
         <br>
         <form action="/updateprofile" method="post" enctype="multipart/form-data">
@@ -52,15 +53,14 @@
                 <div class="col-75">
                     <input type="text"  name="mobileNo"  value="{{$users->mobileNo}}">
                 </div>
-            </div>
-               
+            </div>   
             <br>                           
             <div class="row">
             <button onclick="location.href='/home'" type="button" class="btn btn-primary-5" >Close</button>
             <button type="submit" class="btn btn-primary-6" value="update" >Save changes</button>
-            </div> 
-                      
-        </form> 
+            </div>               
+        </form>
+        <!-- end of the edit profile form  -->
     </div>  
 </body>
 </html>

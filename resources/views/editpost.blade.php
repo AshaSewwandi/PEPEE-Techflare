@@ -9,17 +9,8 @@
             <p>{{ $message }}</p>
         </div>
     @endif
-    <!-- @if ($errors->any())
-        <div class="alert alert-danger">
-            <strong>Whoops!</strong> There were some problems with your input.<br><br>
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif -->
     <div class="container" style="background :none !important ">
+    <!-- start edit post card -->
         <div class="card">
             <div class="card-header">
                 <h3 class="form-title"><b>Edit Post</b></h3>
@@ -29,7 +20,6 @@
                     @csrf
                     <input type="hidden" name="post_id" value="{{$posts->post_id}}" readonly>
                     <input type="hidden" name="animal_id" value="{{$posts->animal_id}}" readonly>
-                        
                         <div class="form-group row">
                             <label for="image" class="col-sm-3 col-form-label">Upload Image:</label>
                             <div class="col-sm-6">
@@ -54,8 +44,7 @@
                             <div class="col-sm-3">
                                 <input type="text" class="form-control" name="age" value="{{$posts->age}}">
                             </div>
-                        </div>
-                           
+                        </div> 
                         <div class="form-group row">                        
                             <label class="container">Vaccinated:
                                 <input type="checkbox" name="vaccination" value="Yes">
@@ -63,11 +52,11 @@
                             </label>
                          </div>
                         <button type="submit" class="btn btn-primary-1" value="Submit" >Save Changes</button>
-                        <button onclick="location.href='/home'"  class="btn btn-primary-2">Cancel</button>
-                
+                        <button onclick="location.href='/home'" type="button" class="btn btn-primary-2">Cancel</button>
                     </form>
                 </div>       
-            </div>   
+            </div> 
+            <!-- enf of the edit post card   -->
         </div>
     </body>
 </html>

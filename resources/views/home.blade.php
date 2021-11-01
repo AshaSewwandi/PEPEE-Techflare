@@ -3,8 +3,8 @@
 
 <div class="container">
     <div class="caption text-center text-white" data-stellar-ratio="0.7">
+        <!-- start view post by id -->
             <div class="row">
-                @foreach($posts as $post)
                 @foreach($animals as $animal)
                     <div class="panel panel-white post panel-shadow">
                         <div class="post-heading">
@@ -18,35 +18,35 @@
                             <div class="dropdown">
                                 <i class="material-icons"style="font-size:48px">&#xe5d3;</i>
                                     <div class="dropdown-content">
-                                        <a href="/deletepost/{{$post->post_id}}">Delete Post</a>
-                                        <a href="/editpost/{{$post->post_id}}">Edit Post</a>  
+                                        <a href="/deletepost/{{$animal->post_id}}">Delete Post</a>
+                                        <a href="/editpost/{{$animal->post_id}}">Edit Post</a>  
                                     </div>
                             </div>
                         </div>
                         <div class="post-image">
-                            <img src=" {{ asset ('storage/images/posts/' . $post->image) }}" alt="Card image" class="image">                                                                                       
+                            <img src=" {{ asset ('storage/images/posts/' . $animal->image) }}" alt="Card image" class="image">                                                                                       
                         </div>
                         <div class=" post-description">
                             
                             <div class="myDIV">See More</div>
                             <div class="hide">
-                                 Location : {{$post->location }}
+                                 Location : {{$animal->location }}
                                  <br>
                                  Age : {{$animal->age }}
                                  <br>
-                                 Caption : {{$post->description }}
+                                 Caption : {{$animal->description }}
                                  <br>
                                  vaccination : {{$animal->vaccination }}
                             </div>
                         </div>          
                     </div> 
                     <br>  
-                    @break
-                    @endforeach 
                 @endforeach 
             </div>
+            <!-- end view post by id -->
+
+            <!-- start profile card -->
             <div class="split right">
-                <!-- <div class="card pull left"> -->
                     <div class="card-head">
                         @if(Auth::user()->image)
                             <img src=" {{ asset ('storage/images/users/' . Auth::user()->image) }}" alt="Card image" class="avatar" >
@@ -64,10 +64,8 @@
                         <br><br>
                         <button onclick="location.href='Addpost/{{ Auth::user()->id }}'" type="button" class="btn btn-primary-4" >Add New Post</button>            
                     </div>
-                <!-- </div>  -->
-            </div>
-
-            
+            </div> 
+            <!-- end profile card -->
     </div>
 </div>    
 @endsection 

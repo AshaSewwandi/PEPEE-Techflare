@@ -7,6 +7,7 @@
       <link href="/css/style.css" rel="stylesheet">   
     </head>
     <body>
+      <!-- start section 1 -->
     <section id="section1" class="parallax" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="caption text-center text-white" data-stellar-ratio="0.7">    
@@ -47,7 +48,10 @@
           </div>
         </div>
       </div>
-    </section>     
+    </section>  
+    <!-- end section 1    -->
+
+    <!-- start section 2 -->
     <section id="section2" class="parallax" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="caption text-center text-white" data-stellar-ratio="0.7">          
@@ -69,7 +73,10 @@
             </div>
         </div>
       </div>
-    </section>     
+    </section>  
+    <!-- end section 2  -->
+    
+    <!-- start section 3 -->
     <section id="section3" class="parallax" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="caption text-center text-white" data-stellar-ratio="0.7">       
@@ -86,7 +93,10 @@
             </div>
         <div class="section2-image3"></div>
       </div>
-    </section>  
+    </section> 
+    <!-- end section 3  -->
+
+    <!-- start section 4 -->
     <section id="section4" class="parallax" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="caption text-center text-white" data-stellar-ratio="0.7">       
@@ -115,6 +125,9 @@
        <div class="section2-image3"></div>
      </div>
     </section>
+    <!-- end section 4 -->
+
+    <!-- start footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
     <br>
       <section class="">
@@ -172,5 +185,6 @@
         <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Dream Team</a>
       </div>
     </footer>
+    <!-- end footer -->
   </body>
 </html>
