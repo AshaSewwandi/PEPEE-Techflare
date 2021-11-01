@@ -76,7 +76,6 @@ class PostController extends Controller
     public  function addPostById(){
 
         $post = Post::where('user_id','=', Auth::user()->id)->get();
-        //dd($post);
         return view('addnewpost', ['posts'=>$post]);  
     }
 
@@ -91,31 +90,23 @@ class PostController extends Controller
     public function edit($post_id)
     {
         $posts = Post::find($post_id);
-        //$posts = Post::all();
         $posts = DB::table('posts')
             ->join('animals', 'posts.post_id', '=', 'animals.post_id')
             ->where('animals.post_id','=', $post_id)
             ->select('animals.*', 'posts.*')
             ->first();
 
-            //dd($posts);
-
-        return view('editpost', compact('posts'));
-        //return view('editpost')->with('posts',$posts);
-        
+        return view('editpost', compact('posts'));    
     }
 
     public function updatePost(Request $request, Post $post){
 
         $data = Post::find($request->input('post_id'));
         $data->post_id=$request->input('post_id');
-        //$data->animal_id=$request->input('animal_id');
         $data->image = $request->image;
         $data->description=$request->description;
         $data->location=$request->location;
         
-
-
         if($request->hasFile('image')){
             $destination_path = 'public/images/posts';
             $image = $request->file('image');
@@ -126,11 +117,8 @@ class PostController extends Controller
         }
 
         $animal = Animal::find($request->input('animal_id'));
-        //$animal = $request->all();
         $animal->age=$request->age;
         $animal->vaccination=$request->vaccination;
-        // $animal->age=$age;
-        // $animal->vaccination=$vaccination;
 
         if($request->hasFile('image')){
             $destination_path = 'public/images/posts';
