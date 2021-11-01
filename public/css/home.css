@@ -38,12 +38,12 @@ h6{
 }
 p{
   position:relative;
-  bottom:50px;
+  bottom:70px;
   right:5px;
 }
 h2{
   position:relative;
-  bottom:10px;
+  bottom:40px;
   right:5px;
 }
 h3{
@@ -70,7 +70,7 @@ button:hover, a:hover {
   border-radius: 50%;
   position:relative;
   right:10px;
-  bottom:30px;
+  bottom:70px;
   border-color: #F737B0;
   }
 .avatar1 {
@@ -139,7 +139,7 @@ a:active {
   color:#F737B0;
   position: relative;
   right: 5px;
-  top:-20px;
+  top:-50px;
   width:180px;
   padding:2px 20px;
   font-size: 20px;
@@ -151,7 +151,7 @@ a:active {
   color:#ffffff;
   position: relative;
   right: 5px;
-  top:-20px;
+  top:-50px;
   padding:3px 20px;
   font-size: 20px;
   font-family:Segeo UI;

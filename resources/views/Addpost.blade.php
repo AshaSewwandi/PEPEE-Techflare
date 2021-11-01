@@ -61,7 +61,21 @@
                         <div class="form-group row">
                             <label for="District" class="col-sm-3 col-form-label">District:</label>
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" name="District" >
+                                <select name="type" class="custom-select" required>
+                                    <option value=""  selected >Select the district</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
                             </div>   
                         </div>
                         <div class="form-group row">
