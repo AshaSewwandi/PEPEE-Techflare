@@ -20,31 +20,16 @@ class HomeController extends Controller
     public function index()
     {
         $users = User::all();
-        $posts = Post::where('user_id','=', Auth::user()->id)->get();
-        // $animals = Animal::all();
-
-        // $animals = DB::table('animals')
-        //     ->join('users', 'posts.user_id', '=', 'users.id')
-        //     ->join('animals', 'posts.post_id', '=', 'animals.post_id')
-        //     ->select('animals.age','animals.vaccination')
-        //      ->where('animals.District', '=', 'Colombo')
-        //     ->get();
-
 
         $animals = DB::table('posts')
         ->join('users', 'posts.user_id', '=', 'users.id')
         ->join('animals', 'posts.post_id', '=', 'animals.post_id')
-        ->select('animals.age', 'animals.vaccination','posts.location','posts.description','posts.post_id','posts.image')
-        //  ->where('user_id','=', 'Auth::user()->id)->get()')
+        ->select('animals.age', 'animals.vaccination','posts.location','posts.description','posts.post_id','posts.image','posts.user_id')
+        ->where('posts.user_id','=', Auth::user()->id)
         ->get();
 
-
-        // return view('Viewpost',compact('posts'));
-        return view('home', compact('users','posts','animals'));
+        return view('home', compact('users','animals'));
         
     }   
-    // public function show(Post $post)
-    // {
-    //     return view('home')->with('posts',$post);
-    // } 
+  
 }
