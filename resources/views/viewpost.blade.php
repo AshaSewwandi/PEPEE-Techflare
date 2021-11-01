@@ -91,11 +91,14 @@
                                 <br>
                                 <h5 class="card-text">Type : {{$post->type}} </h5>        
                                 <h6 class="card-title">{{$post->description}}</h6>
-                                <br>
-                                <h5 class="card-title-3">Contact Details : {{$post->mobileNo}}</h5>    
-                                <h5 class="card-title">Location : {{$post->location}}</h5>  
+                                <h6 class="card-title">{{$post->age}} old</h6>
+                               
+                                <h5 class="card-title-3">Contact Details : {{$post->mobileNo}}</h5> 
+                                <h6 class="card-title-3">Vaccination: {{$post->vaccination}}</h6>  
+                                <h6 class="card-title-3">Gender: {{$post->sex}}</h6>
+                                <h5 class="card-title-3">Location : {{$post->location}}</h5>  
                             </div>       
-                            <div class="w-100"></div>
+                            <div class="w-200"></div>
                         </div>     
                     @endforeach
             </div>
