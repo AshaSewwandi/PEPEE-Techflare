@@ -8,6 +8,7 @@
        
     </head>
     <body>
+    <!-- start section 1 -->
     <section id="section_1" class="parallax" data-stellar-background-ratio="0.5">
       <div class="container">
 				<div class="caption text-center text-white" data-stellar-ratio="0.7">    
@@ -41,7 +42,10 @@
                <div class ="para" >                
                     <p>Responsible pet ownership starts with regular visits to the veterinarian. <br> Given their shorter-than-human lifespan, your dog or cat should be getting <br>a checkup at least once or twice a year.Depending on your pet's vaccination <br>schedule,they may go more frequently when they're young, but establishing <br>and maintaining good pet health means keeping up with vet visits as they age.<br></p>    
                 </div>                                
-    </section>     
+    </section>  
+    <!-- end section 1    -->
+    
+    <!-- start section 2 -->
     <section id="section_2" class="parallax" data-stellar-background-ratio="0.5">
       <div class="container">
 				<div class="caption text-center text-white" data-stellar-ratio="0.7">          
@@ -58,7 +62,9 @@
         </div>
       </div>
     </section> 
+    <!-- end section 2    -->
   
+    <!-- start section 3 -->
     <section id="section_3" class="parallax" data-stellar-background-ratio="0.5">
       <div class="container">
 				<div class="caption text-center text-white" data-stellar-ratio="0.7">       
@@ -80,7 +86,9 @@
       </div>
       </div>
     </section>
+    <!-- end section 3    -->
 
+    <!-- start section 4 -->
     <section id="section_4" class="parallax" data-stellar-background-ratio="0.5">
       <div class="container">
 				<div class="caption text-center text-white" data-stellar-ratio="0.7">       
@@ -110,6 +118,7 @@
         </div>
         </div>
       </section>  
+      <!-- end section 4    -->
         
     </body>
 </html>

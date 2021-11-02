@@ -1,8 +1,7 @@
 <html>
 
     <head>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/css/healthcenterspage.css" rel="stylesheet">
        
@@ -28,20 +27,54 @@
               <a class="nav-link" href="#section4">Contact</a>
             </li> 
           </ul>
-          
-          <html>
-            
-          <table>
-          <tr>
 
+<div class="split left">
+<div class="flip-card">
+   <div class="column">
+        <label for="pname">Filter result by Province</label>
+        <select id="pname" name="Select Province">
+        <option >Select Province</option>
+          <option >Western Province</option>
+          <option >Central Province</option>
+          <option >Southern Provinc</option>
+        </select>
+
+        <label for="dname">Filter result by District</label>
+        <select id="dname" name="Select District">
+        <option >Select District</option>
+          <option >Colombo District</option>
+          <option >Gampaha District</option>
+          <option >Moratua District</option>
+        </select>
+
+        <label for="dvname">Filter result by Division</label>
+        <select id="dvname" name="Select Division">
+        <option >Select Division</option>
+          <option >Kaduwela</option>
+          <option >Kesbawa</option>
+          <option >Kolonna</option>
+        </select>
+    
+        <input type="submit"></input>
+      </form>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="split right">
           <div class="top">
-          <h3>Home> Pet Care Centers</h3>
+          <h1>Home > Pet Care Centers</h1>
           </div>
-  <th>Western province - Colombo District</th>   
-  <tr>
-  <tr>
-    <th>Vaterinary Divison</th>
-    <th>Contact Number</th>
+          <table>
+            <div class = "pname">
+         
+          <th colspan="2">Western province - Colombo District </th>
+
+          <tr>
+          <th>Vaterinary Divison</th>
+          <th>Contact Number</th>
+</tr>
     
   <tr>
     <td>Colombo</td>
@@ -75,39 +108,8 @@
     <td>Moratuwa</td>
     <td>0712545789</td>
   </tr>
-  
-
-  
+</div>
 </table>
-        
-          
-        </div>
-      </div>
-    </section>     
-    <section id="section2" class="parallax" data-stellar-background-ratio="0.5">
-      <div class="container">
-				<div class="caption text-center text-white" data-stellar-ratio="0.7">          
-        
-        </div>
-      </div>
-    </section> 
-    
-    
-    <section id="section3" class="parallax" data-stellar-background-ratio="0.5">
-      <div class="container">
-				<div class="caption text-center text-white" data-stellar-ratio="0.7">       
-        
-      </div>
-      </div>
-    </section>
-
-    <section id="section4" class="parallax" data-stellar-background-ratio="0.5">
-      <div class="container">
-				<div class="caption text-center text-white" data-stellar-ratio="0.7">       
-       
-        </div>
-        </div>
-      </section>  
-        
-    </body>
+</section>     
+</body>
 </html>
