@@ -62,7 +62,7 @@
                         <div class="form-group row">
                             <label for="District" class="col-sm-3 col-form-label">District:</label>
                             <div class="col-sm-3">
-                                <select name="type" class="custom-select" required>
+                                <select name="District" class="custom-select" required>
                                     <option value=""  selected >Select the district</option>
                                     <option value="Colombo">Colombo </option>
                                     <option value="Gampaha">Gampaha</option>

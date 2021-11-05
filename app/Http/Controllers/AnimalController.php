@@ -43,7 +43,7 @@ class AnimalController extends Controller
         $posts = DB::table('posts')
             ->join('users', 'posts.user_id', '=', 'users.id')
             ->join('animals', 'posts.post_id', '=', 'animals.post_id')
-            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.District', 'posts.image','animals.type','posts.created_at')
+            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.District', 'posts.image','animals.type','posts.created_at','animals.age','animals.vaccination','animals.sex')
             ->where('posts.District', '=', 'Colombo')
             ->get();
 
@@ -56,7 +56,7 @@ class AnimalController extends Controller
         $posts = DB::table('posts')
             ->join('users', 'posts.user_id', '=', 'users.id')
             ->join('animals', 'posts.post_id', '=', 'animals.post_id')
-            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.District', 'posts.image','animals.type','posts.created_at')
+            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.District', 'posts.image','animals.type','posts.created_at','animals.age','animals.vaccination','animals.sex')
             ->where('posts.District', '=', 'Kaluthara')
             ->get();
 
@@ -69,7 +69,7 @@ class AnimalController extends Controller
         $posts = DB::table('posts')
             ->join('users', 'posts.user_id', '=', 'users.id')
             ->join('animals', 'posts.post_id', '=', 'animals.post_id')
-            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.District', 'posts.image','animals.type','posts.created_at')
+            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.District', 'posts.image','animals.type','posts.created_at','animals.age','animals.vaccination','animals.sex')
             ->where('posts.District', '=', 'Gampaha')
             ->get();
 

@@ -27,7 +27,8 @@ class PostController extends Controller
 
     //store post
     public function StorePost(Request $request)
-    {            
+    { 
+        //dd($request);           
         $request->validate([
             'type' => 'required',
             'location' => 'required',
@@ -70,6 +71,10 @@ class PostController extends Controller
             $animals['image'] = $image_name;
         }
         $animals->save();
+
+        $animals = Animal::all();
+        $posts = Post::all();
+
         return redirect("/home");
     }
     public  function addPostById(){
@@ -152,7 +157,7 @@ class PostController extends Controller
         $posts = DB::table('posts')
             ->join('users', 'posts.user_id', '=', 'users.id')
             ->join('animals', 'posts.post_id', '=', 'animals.post_id')
-            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.image','animals.type','posts.created_at')
+            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.image','animals.type','posts.created_at','animals.age','animals.vaccination','animals.sex')
             ->orderBy('created_at','asc')->get();
 
         return view('Viewpost',compact('posts'));
@@ -164,7 +169,7 @@ class PostController extends Controller
         $posts = DB::table('posts')
             ->join('users', 'posts.user_id', '=', 'users.id')
             ->join('animals', 'posts.post_id', '=', 'animals.post_id')
-            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.image','animals.type','posts.created_at')
+            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.image','animals.type','posts.created_at','animals.age','animals.vaccination','animals.sex')
             ->where('animals.type', '=', 'Dog')
             ->orWhere('animals.type','Puppy')
             ->get();
@@ -178,7 +183,7 @@ class PostController extends Controller
         $posts = DB::table('posts')
             ->join('users', 'posts.user_id', '=', 'users.id')
             ->join('animals', 'posts.post_id', '=', 'animals.post_id')
-            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.image','animals.type','posts.created_at')
+            ->select('users.mobileNo', 'posts.description', 'posts.location', 'posts.image','animals.type','posts.created_at','animals.age','animals.vaccination','animals.sex')
             ->where('animals.type', '=', 'Kitten')
             ->orWhere('animals.type','Adult Cat')
             ->get();
