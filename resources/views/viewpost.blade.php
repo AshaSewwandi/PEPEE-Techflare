@@ -13,6 +13,7 @@
                     <img src="/img/logo.png" alt="" width="120" height="60">
                 </div> 
                 <br><br> 
+                <!-- sort result -->
                 <div class="col-sm-6">
                     <div class="card-body">
                         <div class="form-group">
@@ -24,7 +25,8 @@
                             </select>
                         </div>
                     </div>
-                </div>          
+                </div>   
+                <!-- filter result by Location -->       
                 <div class="col-sm-6">
                     <div class="card-body">
                         <div class="form-group">
@@ -38,6 +40,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- filter result by Type --> 
                 <div class="col-sm-6">
                     <div class="card-body">
                         <div class="form-group">
@@ -79,6 +82,7 @@
                     </div>  
                 </div>             
             </div>
+            <!-- start of the view post  -->
             <div class="col-sm-4">
                 <br><br><br>  
                     @foreach($posts as $post)
@@ -102,6 +106,7 @@
                         </div>     
                     @endforeach
             </div>
+            <!-- enf of the view post  -->
         </body>
 </html>
 

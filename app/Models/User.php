@@ -50,6 +50,8 @@ class User extends Authenticatable
         return 'Dewmi Nethsara';
     }
 
+        
+    // 1:m relationship with post
     public function post()
     {
         return $this->hasmany(Post::class, 'post_id');

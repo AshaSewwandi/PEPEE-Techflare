@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class MessageController extends Controller
 {
    
+    //add messages
     public function AddMessage()
     {   
         $message = message::all();
@@ -15,6 +16,7 @@ class MessageController extends Controller
         return view('landingpage');
     }
 
+    //store messages
     public function StoreMessage(Request $request)
     {            
         $message=new message;
