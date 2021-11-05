@@ -61,20 +61,33 @@
                         <div class="form-group row">
                             <label for="District" class="col-sm-3 col-form-label">District:</label>
                             <div class="col-sm-3">
-                                <select name="type" class="custom-select" required>
+                                <select name="District" class="custom-select" required>
                                     <option value=""  selected >Select the district</option>
-                                    <option value="January">January</option>
-                                    <option value="February">February</option>
-                                    <option value="March">March</option>
-                                    <option value="April">April</option>
-                                    <option value="May">May</option>
-                                    <option value="June">June</option>
-                                    <option value="July">July</option>
-                                    <option value="August">August</option>
-                                    <option value="September">September</option>
-                                    <option value="October">October</option>
-                                    <option value="November">November</option>
-                                    <option value="December">December</option>
+                                    <option value="Galle">Galle</option>
+                                    <option value="Mathara">Mathara</option>
+                                    <option value="Hambanthota">Hambanthota</option>
+                                    <option value="Badulla">Badulla</option>
+                                    <option value="Monaragala">Monaragala</option>
+                                    <option value="Ampara">Ampara</option>
+                                    <option value="Batticaloa">Batticaloa</option>
+                                    <option value="Trincomalee">Trincomalee</option>
+                                    <option value="Ratnapura">Ratnapurar</option>
+                                    <option value="Kegalle">Kegalle</option>
+                                    <option value="Nuwara Eliya">Nuwara Eliya</option>
+                                    <option value="Kandy">Kandy</option>
+                                    <option value="Matale">Matale</option>
+                                    <option value="Polonnaruwa">Polonnaruwa</option>
+                                    <option value="Anuradhapura">Anuradhapura</option>
+                                    <option value="Kalutara">Kalutara</option>
+                                    <option value="Colombo">Colombo</option>
+                                    <option value="December">Gampaha</option>
+                                    <option value="Kurunegala">Kurunegala</option>
+                                    <option value="Puttalam">Puttalam</option>
+                                    <option value="Vavuniya">Vavuniya</option>
+                                    <option value="Mullaitivu">Mullaitivu</option>
+                                    <option value="Mannar">Mannar</option>
+                                    <option value="Kilinochchi">Kilinochchi</option>
+                                    <option value="Jaffna">Jaffna</option>
                                 </select>
                             </div>   
                         </div>
