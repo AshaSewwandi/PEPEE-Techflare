@@ -11,14 +11,12 @@ use App\Models\Post;
 class PostController extends Controller
 {
 
+    //view post
     public function viewpost(){
         return view('viewpost');  
     }
 
-    public function index(){
- 
-    }
-
+    //add post
     public function Addpost(Request $request)
     {   
         $post = Post::all();
@@ -27,6 +25,7 @@ class PostController extends Controller
         return view('Addpost', compact('post','user'));
     }
 
+    //store post
     public function StorePost(Request $request)
     { 
         //dd($request);           
@@ -140,6 +139,7 @@ class PostController extends Controller
         return redirect('/home');
     }
 
+    //view latest posts
     public function viewLatestpost()
     {
         $posts = DB::table('posts')
@@ -151,6 +151,7 @@ class PostController extends Controller
         return view('Viewpost',compact('posts'));
     }
 
+    //view oldest posts
     public function viewOldestpost()
     {    
         $posts = DB::table('posts')
@@ -162,7 +163,7 @@ class PostController extends Controller
         return view('Viewpost',compact('posts'));
     }
     
-
+    //filter by type
     public function filterByType()
     {    
         $posts = DB::table('posts')
@@ -176,6 +177,7 @@ class PostController extends Controller
         return view('Viewpost',compact('posts'));
     }
 
+    //filter by type
     public function filterByTypes()
     {    
         $posts = DB::table('posts')

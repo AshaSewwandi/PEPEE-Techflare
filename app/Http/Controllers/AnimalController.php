@@ -11,13 +11,14 @@ use App\Models\User;
 class AnimalController extends Controller
 {
     
+    //add animals
     public function AddAnimal()
-    {   
-       // $animal = Animal::all();     
+    {     
         $animal=  DB::table('posts')->where('post_id',$post_id)->get()->first();
         return view('Addpost')->with('post', $animal);
     }
 
+    //store animals
     public function StoreAnimal(Request $request)
     {            
         $animal=new Animal;
@@ -36,6 +37,7 @@ class AnimalController extends Controller
         return back()->with('success','Post add successfully');
     }
 
+    //filter by location 
     public function filterByLocationC()
     {    
         $posts = DB::table('posts')
@@ -48,6 +50,7 @@ class AnimalController extends Controller
         return view('Viewpost',compact('posts'));
     }
 
+    //filter by location 
     public function filterByLocationK()
     {    
         $posts = DB::table('posts')
@@ -60,6 +63,7 @@ class AnimalController extends Controller
         return view('Viewpost',compact('posts'));
     }
 
+    //filter by location 
     public function filterByLocationG()
     {    
         $posts = DB::table('posts')

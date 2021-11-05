@@ -20,6 +20,7 @@
         </div>
     @endif
     <div class="container" style="background :none !important ">
+       <!-- start add post card -->
         <div class="card">
             <div class="card-header">
                 <h3 class="form-title"><b>Add Post</b></h3>
@@ -63,31 +64,30 @@
                             <div class="col-sm-3">
                                 <select name="District" class="custom-select" required>
                                     <option value=""  selected >Select the district</option>
-                                    <option value="Galle">Galle</option>
-                                    <option value="Mathara">Mathara</option>
-                                    <option value="Hambanthota">Hambanthota</option>
-                                    <option value="Badulla">Badulla</option>
-                                    <option value="Monaragala">Monaragala</option>
-                                    <option value="Ampara">Ampara</option>
-                                    <option value="Batticaloa">Batticaloa</option>
-                                    <option value="Trincomalee">Trincomalee</option>
-                                    <option value="Ratnapura">Ratnapurar</option>
-                                    <option value="Kegalle">Kegalle</option>
-                                    <option value="Nuwara Eliya">Nuwara Eliya</option>
-                                    <option value="Kandy">Kandy</option>
-                                    <option value="Matale">Matale</option>
-                                    <option value="Polonnaruwa">Polonnaruwa</option>
-                                    <option value="Anuradhapura">Anuradhapura</option>
-                                    <option value="Kalutara">Kalutara</option>
-                                    <option value="Colombo">Colombo</option>
-                                    <option value="December">Gampaha</option>
-                                    <option value="Kurunegala">Kurunegala</option>
+                                    <option value="Colombo">Colombo </option>
+                                    <option value="Gampaha">Gampaha</option>
+                                    <option value="Kaluthara">Kaluthara </option>
+                                    <option value="Kandy">Kandy </option>
+                                    <option value="Matale">Matale </option>
+                                    <option value="Nuwera Eliya">Nuwera Eliya</option>
+                                    <option value="Galle">Galle </option>
+                                    <option value="Matara">Matara </option>
+                                    <option value="Hambanthota">Hambanthota </option>
+                                    <option value="Jaffna">Jaffna </option>
+                                    <option value="Mannar">Mannar </option>
+                                    <option value="Vauniya">Vauniya </option>
+                                    <option value="Mulathivu">Mulathivu  </option>
+                                    <option value="Kilinochchi">Kilinochchi </option>
+                                    <option value="Batticaloa">Batticaloa  </option>
+                                    <option value="Ampara">Ampara </option>
+                                    <option value="Kurunegala">Kurunegala </option>
                                     <option value="Puttalam">Puttalam</option>
-                                    <option value="Vavuniya">Vavuniya</option>
-                                    <option value="Mullaitivu">Mullaitivu</option>
-                                    <option value="Mannar">Mannar</option>
-                                    <option value="Kilinochchi">Kilinochchi</option>
-                                    <option value="Jaffna">Jaffna</option>
+                                    <option value="Anuradhapura">Anuradhapura  </option>
+                                    <option value="Polonnaruwa">Polonnaruwa  </option>
+                                    <option value="Badulla">Badulla </option>
+                                    <option value="Monaragala">Monaragala  </option>
+                                    <option value="Rathnapura">Rathnapura  </option>
+                                    <option value="Kegalle">Kegalle  </option>
                                 </select>
                             </div>   
                         </div>
@@ -123,6 +123,7 @@
                 </div>       
             </div>   
         </div>
+        <!-- enf of the add post card   -->
     </body>
 </html>
 

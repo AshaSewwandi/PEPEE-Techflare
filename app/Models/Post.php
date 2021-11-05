@@ -16,11 +16,14 @@ class Post extends Model
 
     public $timestamp=false;
 
+    // 1:1 relationship with animal
     public function Animal()
     {
         return $this->belongsTo(Animal::class, 'animal_id');
     }
 
+        
+    // 1:m relationship with user
     public function user()
     {
         return $this->belongsTo(User::class, 'id');

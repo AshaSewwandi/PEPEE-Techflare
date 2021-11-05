@@ -16,6 +16,7 @@ class Animal extends Model
 
     public $timestamp=false;
 
+    // 1:1 relationship with post
     public function Post()
     {
         return $this->hasOne(Post::class, 'post_id');
